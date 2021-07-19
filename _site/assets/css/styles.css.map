@@ -3,10 +3,10 @@
 	"file": "styles.css",
 	"sources": [
 		"styles.scss",
-		"src/_sass/main.scss"
+		"_sass/main.scss"
 	],
 	"sourcesContent": [
-		"@import './src/_sass/main'",
+		"@import 'main';",
 		"html, body {\n    padding: 0;\n    margin:0;\n}\n\n.current {\n    color: green;\n}"
 	],
 	"names": [],
