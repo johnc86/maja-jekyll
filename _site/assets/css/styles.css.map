@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import 'main';",
-		"html, body {\n    padding: 0;\n    margin:0;\n}\n\n.current {\n    color: green;\n}"
+		"html {\n    box-sizing: border-box;\n}\n\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\np, h1, h2, h3, h4, h5, h6 {\n    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n}\n\n.holdingpage {\n    display: flex;\n    height: 100vh;\n\n    h1 {\n        margin: auto;\n    }\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,IAAI,EAAE,IAAI,CAAC,EACP,OAAO,EAAE,CAAC,EACV,MAAM,EAAC,CAAC,GACX;;AAED,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,KAAK,GACf"
+	"mappings": "ACAA,AAAA,IAAI,CAAC,EACD,UAAU,EAAE,UAAU,GACzB;;AAED,AAAA,CAAC,EAAE,CAAC,CAAC,MAAM,EAAE,CAAC,CAAC,KAAK,CAAC,EACjB,UAAU,EAAE,OAAO,GACtB;;AAED,AAAA,CAAC,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EACtB,WAAW,EAAE,gEAAgE,GAChF;;AAED,AAAA,YAAY,CAAC,EACT,OAAO,EAAE,IAAI,EACb,MAAM,EAAE,KAAK,GAKhB;;AAPD,AAII,YAJQ,CAIR,EAAE,CAAC,EACC,MAAM,EAAE,IAAI,GACf"
 }
