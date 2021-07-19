@@ -3,12 +3,18 @@
 	"file": "styles.css",
 	"sources": [
 		"styles.scss",
-		"_sass/main.scss"
+		"_sass/_fonts.scss",
+		"_sass/_colours.scss",
+		"_sass/_main.scss",
+		"_sass/_nav.scss"
 	],
 	"sourcesContent": [
-		"@import 'main';",
-		"html {\n    box-sizing: border-box;\n}\n\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\np, h1, h2, h3, h4, h5, h6 {\n    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n}\n\n.holdingpage {\n    display: flex;\n    height: 100vh;\n\n    h1 {\n        margin: auto;\n    }\n}"
+		"@import 'fonts';\n@import 'main';\n@import 'nav';\n",
+		"@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Laila:wght@300;600');\r\n@import url('https://fonts.googleapis.com/css2?family=family=Lato:wght@300');\r\n// @import url('https://fonts.googleapis.com/css2?family=Manjari');\r\n// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300');\r\n// @import url('https://fonts.googleapis.com/css2?family=PT+Sans');\r\n// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300');\r\n@import url('https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700');\r\n\r\n@import 'colours';\r\n\r\n$header: 'Laila', serif;\r\n$text: 'Lato', sans-serif;\r\n$accent: 'Thasadith', sans-serif;\r\n\r\np {\r\n    font-family: $text;\r\n    color: $black;\r\n}\r\n\r\nh1, h2 {\r\n    font-family: $header;\r\n    font-weight: 600;\r\n    color: $primary;\r\n}\r\n\r\nh3, h4, h5, h6 {\r\n    font-family: $header;\r\n    font-weight: 300;\r\n}\r\n\r\nh1 {\r\n    font-size: 4rem;\r\n}\r\n\r\nh2 {\r\n    font-size: 3rem;\r\n}\r\n\r\nh3 {\r\n    font-size: 2.5rem;\r\n}\r\n\r\nh4 {\r\n    font-size: 1.5rem;\r\n}\r\n\r\nh5 {\r\n    font-size: 1.2rem\r\n}\r\n\r\nh6 {\r\n    font-size: 1rem;\r\n}\r\n\r\n.quote {\r\n    font-family: $accent;\r\n}",
+		"$primary: #4059ad;\r\n$secondary: #FFF;\r\n$accent: #FFF;\r\n$bg: #FFF;\r\n$white: #FFF;\r\n$black: #444A51;\r\n$pink: #ffc2ce;",
+		"html, body {\r\n    box-sizing: border-box;\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\n*, *:before, *:after {\r\n    box-sizing: inherit;\r\n}",
+		"nav {\r\n    display: flex;\r\n    background: $pink;\r\n    font-family: $text;\r\n    text-decoration: none;\r\n    \r\n    a {\r\n        text-decoration: none;\r\n    }\r\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,IAAI,CAAC,EACD,UAAU,EAAE,UAAU,GACzB;;AAED,AAAA,CAAC,EAAE,CAAC,CAAC,MAAM,EAAE,CAAC,CAAC,KAAK,CAAC,EACjB,UAAU,EAAE,OAAO,GACtB;;AAED,AAAA,CAAC,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EACtB,WAAW,EAAE,gEAAgE,GAChF;;AAED,AAAA,YAAY,CAAC,EACT,OAAO,EAAE,IAAI,EACb,MAAM,EAAE,KAAK,GAKhB;;AAPD,AAII,YAJQ,CAIR,EAAE,CAAC,EACC,MAAM,EAAE,IAAI,GACf"
+	"mappings": "ACAA,OAAO,CAAC,mFAAI;AACZ,OAAO,CAAC,oEAAI;AAKZ,OAAO,CAAC,sEAAI;AAQZ,AAAA,CAAC,CAAC,EACE,WAAW,EAJR,MAAM,EAAE,UAAU,EAKrB,KAAK,ECXD,OAAO,GDYd;;AAED,AAAA,EAAE,EAAE,EAAE,CAAC,EACH,WAAW,EAVN,OAAO,EAAE,KAAK,EAWnB,WAAW,EAAE,GAAG,EAChB,KAAK,ECtBC,OAAO,GDuBhB;;AAED,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EACX,WAAW,EAhBN,OAAO,EAAE,KAAK,EAiBnB,WAAW,EAAE,GAAG,GACnB;;AAED,AAAA,EAAE,CAAC,EACC,SAAS,EAAE,IAAI,GAClB;;AAED,AAAA,EAAE,CAAC,EACC,SAAS,EAAE,IAAI,GAClB;;AAED,AAAA,EAAE,CAAC,EACC,SAAS,EAAE,MAAM,GACpB;;AAED,AAAA,EAAE,CAAC,EACC,SAAS,EAAE,MAAM,GACpB;;AAED,AAAA,EAAE,CAAC,EACC,SAAS,EAAE,MACf,GAAC;;AAED,AAAA,EAAE,CAAC,EACC,SAAS,EAAE,IAAI,GAClB;;AAED,AAAA,MAAM,CAAC,EACH,WAAW,EA3CN,WAAW,EAAE,UAAU,GA4C/B;;AExDD,AAAA,IAAI,EAAE,IAAI,CAAC,EACP,UAAU,EAAE,UAAU,EACtB,OAAO,EAAE,CAAC,EACV,MAAM,EAAE,CAAC,GACZ;;AAED,AAAA,CAAC,EAAE,CAAC,CAAC,MAAM,EAAE,CAAC,CAAC,KAAK,CAAC,EACjB,UAAU,EAAE,OAAO,GACtB;;ACRD,AAAA,GAAG,CAAC,EACA,OAAO,EAAE,IAAI,EACb,UAAU,EFIP,OAAO,EEHV,WAAW,EHQR,MAAM,EAAE,UAAU,EGPrB,eAAe,EAAE,IAAI,GAKxB;;AATD,AAMI,GAND,CAMC,CAAC,CAAC,EACE,eAAe,EAAE,IAAI,GACxB"
 }

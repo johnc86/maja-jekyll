@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Laila:wght@300;600');
+@import url('https://fonts.googleapis.com/css2?family=family=Lato:wght@300');
+// @import url('https://fonts.googleapis.com/css2?family=Manjari');
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300');
+// @import url('https://fonts.googleapis.com/css2?family=PT+Sans');
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700');
+
+@import 'colours';
+
+$header: 'Laila', serif;
+$text: 'Lato', sans-serif;
+$accent: 'Thasadith', sans-serif;
+
+p {
+    font-family: $text;
+    color: $black;
+}
+
+h1, h2 {
+    font-family: $header;
+    font-weight: 600;
+    color: $primary;
+}
+
+h3, h4, h5, h6 {
+    font-family: $header;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.quote {
+    font-family: $accent;
+}
