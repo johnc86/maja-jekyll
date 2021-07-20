@@ -1,10 +1,11 @@
 <nav class="topnav" id="myTopnav">
+    <div class="nav__logo--container">{% include _anilogo.html %}</div>
     {% for item in site.data.navigation.items %}
     <a href="{{ item.link }}" 
         {% if page.url==item.link %}
-            class="active" 
+            class="nav__active" 
         {% endif %}>
-            <p>{{ item.name | upcase}}</p>
+            {{ item.name | downcase}}
     </a>
     {% endfor %}
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">

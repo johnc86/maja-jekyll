@@ -1,7 +1,17 @@
-$primary: #4059ad;
-$secondary: #FFF;
-$accent: #FFF;
-$bg: #FFF;
-$white: #FFF;
-$black: #444A51;
-$pink: #ffc2ce;
+$lemon-meringue: rgba(246, 239, 203, 1);
+$space-cadet: rgba(25, 42, 81, 1);
+$mint: rgba(66, 179, 145, 1);
+$mustard: rgba(255, 215, 81, 1);
+
+$c-1: $space-cadet;
+$c-2: #444444;
+$c-accent: $mint;
+$c-accent2: $mustard;
+$c-bg: #FFF;
+$c-bg2: $lemon-meringue;
+$c-white: #FFF;
+$c-black: #444A51;
+
+:root {
+    --logo: black;
+}

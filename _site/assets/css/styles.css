@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant&family=Laila:wght@300;600");
 @import url("https://fonts.googleapis.com/css2?family=family=Lato:wght@300");
 @import url("https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700");
+:root { --logo: black; }
+
 p { font-family: "Lato", sans-serif; color: #444A51; }
 
-h1, h2 { font-family: "Laila", serif; font-weight: 600; color: #4059ad; }
+h1, h2 { font-family: "Laila", serif; font-weight: 600; color: #192a51; }
 
 h3, h4, h5, h6 { font-family: "Laila", serif; font-weight: 300; }
 
@@ -25,8 +27,24 @@ html, body { box-sizing: border-box; padding: 0; margin: 0; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
-nav { display: flex; background: #ffc2ce; font-family: "Lato", sans-serif; text-decoration: none; }
+.container { max-width: 60rem; margin: 0 auto 0 auto; }
 
-nav a { text-decoration: none; }
+nav, .nav { display: flex; background: #42b391; font-family: "Laila", serif; font-size: 1.5rem; text-decoration: none; color: #FFF; z-index: 1; }
+
+nav a, .nav a { text-decoration: none; color: #FFF; padding: 0.5rem 1rem; }
+
+nav a:first-of-type, .nav a:first-of-type { margin-left: auto; }
+
+nav a:hover, .nav a:hover { color: #ffd751; }
+
+nav__active, .nav__active { color: #192a51; }
+
+nav__logo, .nav__logo { height: 3rem; z-index: 5; width: 100%; }
+
+nav__logo--container, .nav__logo--container { z-index: 5; margin: 1rem 3rem; }
+
+nav .blob1, nav .blob2, .nav .blob1, .nav .blob2 { height: 5rem; width: 5rem; position: absolute; top: -1rem; left: 0; fill: #FFF; z-index: -2; }
+
+nav .blob__container, .nav .blob__container { position: relative; width: 100%; height: 100%; z-index: -2; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,10 +1,43 @@
-nav {
+nav, .nav {
     display: flex;
-    background: $pink;
-    font-family: $text;
+    background: $c-accent;
+    font-family: $f-header;
+    font-size: 1.5rem;
     text-decoration: none;
-    
+    color: $c-white;
+    z-index: 1;
+
     a {
         text-decoration: none;
+        color: $c-white;
+        padding: 0.5rem 1rem;
+
+        &:first-of-type {
+            margin-left: auto;
+        }
+
+        &:hover {
+            color: $c-accent2;
+        }
     }
+
+    &__active {
+        color: $c-1;
+    }
+
+    &__logo {
+        height: 3rem;
+        // fill: var(--logo);
+        z-index: 5;
+        // background: blue;
+        width: 100%;
+
+        &--container {
+            z-index: 5;
+            margin: 1rem 3rem;
+        }
+    }
+
+    @import 'blob';
+
 }

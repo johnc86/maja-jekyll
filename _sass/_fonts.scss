@@ -8,23 +8,23 @@
 
 @import 'colours';
 
-$header: 'Laila', serif;
-$text: 'Lato', sans-serif;
-$accent: 'Thasadith', sans-serif;
+$f-header: 'Laila', serif;
+$f-text: 'Lato', sans-serif;
+$f-accent: 'Thasadith', sans-serif;
 
 p {
-    font-family: $text;
-    color: $black;
+    font-family: $f-text;
+    color: $c-black;
 }
 
 h1, h2 {
-    font-family: $header;
+    font-family: $f-header;
     font-weight: 600;
-    color: $primary;
+    color: $c-1;
 }
 
 h3, h4, h5, h6 {
-    font-family: $header;
+    font-family: $f-header;
     font-weight: 300;
 }
 
@@ -53,5 +53,5 @@ h6 {
 }
 
 .quote {
-    font-family: $accent;
+    font-family: $f-accent;
 }
