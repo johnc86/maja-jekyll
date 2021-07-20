@@ -33,7 +33,7 @@ html, body { box-sizing: border-box; padding: 0; margin: 0; }
 
 header, .header { display: flex; background: #42b391; font-family: "Laila", serif; font-size: 1.5rem; text-decoration: none; color: #FFF; z-index: 1; /* When the screen is small, hide links, Show  icon */ }
 
-header__logo, .header__logo { height: 3rem; z-index: 5; width: 100%; min-width: 6rem; }
+header__logo, .header__logo { height: 3rem; z-index: 5; min-width: 6rem; }
 
 header__logo--container, header__logo--responsive, .header__logo--container, .header__logo--responsive { display: flex; z-index: 5; margin: 1rem 3rem; }
 
