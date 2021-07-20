@@ -1,5 +1,7 @@
 items:
   - name: Home
     link: /
-  - name: About
-    link: /about.html
+  - name: Gallery
+    link: /gallery.html
+  - name: Writing
+    link: /writing.html

@@ -1,19 +1,38 @@
-.blob1, .blob2 {
+
+$speed1: 30s;
+$speed2: 60s;
+$color1: $c-white;
+$color2: $mustard;
+
+.blob1-1, .blob1-2 {
     height: 5rem;
     width: 5rem;
     position: absolute;
-    top: -1rem;
-    left: 0;
-    fill: $c-white;
+    top: 0;
+    fill: $color1;
     z-index: -2;
 }
 
-.blob {
-    &__container {
-        position: relative;
-        // background: yellow;
-        width: 100%;
-        height: 100%;
-        z-index: -2;
-    }
+.blob1-1 {
+    left: 3rem;
+    -webkit-animation:spin $speed2 alternate-reverse infinite linear;
+    -moz-animation:spin $speed2 alternate-reverse infinite linear;
+    animation:spin $speed2 alternate-reverse infinite linear;
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg);} }
+
+.blob1-2 {
+    width: 4rem;
+    -webkit-animation:unspin $speed1 alternate-reverse infinite linear;
+    -moz-animation:unspin $speed1 alternate-reverse infinite linear;
+    animation:unspin $speed1 alternate-reverse infinite linear;
+
+    fill: $color2;
+}
+
+@-moz-keyframes unspin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes unspin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes unspin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }

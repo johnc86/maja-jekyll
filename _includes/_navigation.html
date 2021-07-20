@@ -1,5 +1,11 @@
-<nav class="topnav" id="myTopnav">
-    <div class="nav__logo--container">{% include _anilogo.html %}</div>
+<nav class="topnav" id="siteNav">
+    <a href="javascript:void(0);" class="nav__icon" onclick="navMenu()">
+        M
+    </a>
+    <a href="javascript:void(0);" class="nav__icon--close" onclick="navMenu()">
+        x
+    </a>
+    
     {% for item in site.data.navigation.items %}
     <a href="{{ item.link }}" 
         {% if page.url==item.link %}
@@ -8,7 +14,4 @@
             {{ item.name | downcase}}
     </a>
     {% endfor %}
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
 </nav>

@@ -1,0 +1,53 @@
+header, .header {
+    display: flex;
+    background: $c-accent;
+    font-family: $f-header;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $c-white;
+    z-index: 1;
+
+    &__logo {
+        height: 3rem;
+        z-index: 5;
+        width: 100%;
+        min-width: 6rem;
+
+        &--container, &--responsive {
+            display: flex;
+            z-index: 5;
+            margin: 1rem 3rem;
+        }
+    }
+
+    @import 'blob';
+    @import 'nav';
+}
+
+ /* When the menu is open */
+ @media screen and (max-width: $mobilebreak) {
+     // Make the logo bigger
+    .header__logo--responsive {
+        margin: 1rem;
+
+        .header__logo {
+            height: 8rem;
+            margin: auto 0 auto 0.5rem;
+        };
+
+        .blob {
+            top:3rem;
+        }
+
+        .blob1-1 {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .blob1-2 {
+            width: 10rem;
+            height: 10rem;
+        }
+
+    }
+}

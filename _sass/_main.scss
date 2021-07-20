@@ -11,4 +11,8 @@ html, body {
 .container {
     max-width: 60rem;
     margin:0 auto 0 auto;
+    
+    @media only screen and (max-width: $pagewidth) {
+        margin: 0 1rem;
+    }
 }

@@ -21,7 +21,7 @@ h5 { font-size: 1.2rem; }
 
 h6 { font-size: 1rem; }
 
-.quote { font-family: "Thasadith", sans-serif; }
+.accent { font-family: "Thasadith", sans-serif; font-weight: 400; font-size: 1.4rem; }
 
 html, body { box-sizing: border-box; padding: 0; margin: 0; }
 
@@ -29,22 +29,49 @@ html, body { box-sizing: border-box; padding: 0; margin: 0; }
 
 .container { max-width: 60rem; margin: 0 auto 0 auto; }
 
-nav, .nav { display: flex; background: #42b391; font-family: "Laila", serif; font-size: 1.5rem; text-decoration: none; color: #FFF; z-index: 1; }
+@media only screen and (max-width: 60rem) { .container { margin: 0 1rem; } }
 
-nav a, .nav a { text-decoration: none; color: #FFF; padding: 0.5rem 1rem; }
+header, .header { display: flex; background: #42b391; font-family: "Laila", serif; font-size: 1.5rem; text-decoration: none; color: #FFF; z-index: 1; /* When the screen is small, hide links, Show  icon */ }
 
-nav a:first-of-type, .nav a:first-of-type { margin-left: auto; }
+header__logo, .header__logo { height: 3rem; z-index: 5; width: 100%; min-width: 6rem; }
 
-nav a:hover, .nav a:hover { color: #ffd751; }
+header__logo--container, header__logo--responsive, .header__logo--container, .header__logo--responsive { display: flex; z-index: 5; margin: 1rem 3rem; }
 
-nav__active, .nav__active { color: #192a51; }
+header .blob1-1, header .blob1-2, .header .blob1-1, .header .blob1-2 { height: 5rem; width: 5rem; position: absolute; top: 0; fill: #FFF; z-index: -2; }
 
-nav__logo, .nav__logo { height: 3rem; z-index: 5; width: 100%; }
+header .blob1-1, .header .blob1-1 { left: 3rem; -webkit-animation: spin 60s alternate-reverse infinite linear; -moz-animation: spin 60s alternate-reverse infinite linear; animation: spin 60s alternate-reverse infinite linear; }
 
-nav__logo--container, .nav__logo--container { z-index: 5; margin: 1rem 3rem; }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 
-nav .blob1, nav .blob2, .nav .blob1, .nav .blob2 { height: 5rem; width: 5rem; position: absolute; top: -1rem; left: 0; fill: #FFF; z-index: -2; }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 
-nav .blob__container, .nav .blob__container { position: relative; width: 100%; height: 100%; z-index: -2; }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+header .blob1-2, .header .blob1-2 { width: 4rem; -webkit-animation: unspin 30s alternate-reverse infinite linear; -moz-animation: unspin 30s alternate-reverse infinite linear; animation: unspin 30s alternate-reverse infinite linear; fill: #ffd751; }
+
+@-moz-keyframes unspin { 100% { -moz-transform: rotate(-360deg); } }
+
+@-webkit-keyframes unspin { 100% { -webkit-transform: rotate(-360deg); } }
+
+@keyframes unspin { 100% { -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+header nav, header .nav, .header nav, .header .nav { display: flex; margin-left: auto; }
+
+header nav a, header .nav a, .header nav a, .header .nav a { text-decoration: none; color: #FFF; padding: 1rem 1rem; margin: auto 0; }
+
+header nav a:first-of-type, header .nav a:first-of-type, .header nav a:first-of-type, .header .nav a:first-of-type { margin-left: auto; }
+
+header nav a:hover, header .nav a:hover, .header nav a:hover, .header .nav a:hover { color: #ffd751; }
+
+header nav__active, header .nav__active, .header nav__active, .header .nav__active { color: #192a51; }
+
+header nav__icon, header nav__icon--close, header .nav__icon, header .nav__icon--close, .header nav__icon, .header nav__icon--close, .header .nav__icon, .header .nav__icon--close { display: none; }
+
+@media screen and (max-width: 40rem) { header nav a, header .nav a, .header nav a, .header .nav a { display: none; } header nav__icon, header .nav__icon, .header nav__icon, .header .nav__icon { display: flex; } header .topnav--responsive, .header .topnav--responsive { flex-direction: column; } header .topnav--responsive a, .header .topnav--responsive a { display: flex; justify-content: flex-end; } header .topnav--responsive .nav__icon, .header .topnav--responsive .nav__icon { display: none; } header .topnav--responsive .nav__icon--close, .header .topnav--responsive .nav__icon--close { color: #ffd751; } }
+
+/* When the menu is open */
+@media screen and (max-width: 40rem) { .header__logo--responsive { margin: 1rem; } .header__logo--responsive .header__logo { height: 8rem; margin: auto 0 auto 0.5rem; } .header__logo--responsive .blob { top: 3rem; } .header__logo--responsive .blob1-1 { width: 10rem; height: 10rem; } .header__logo--responsive .blob1-2 { width: 10rem; height: 10rem; } }
 
 /*# sourceMappingURL=styles.css.map */
