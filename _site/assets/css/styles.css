@@ -29,7 +29,7 @@ html, body { box-sizing: border-box; padding: 0; margin: 0; }
 
 .container { max-width: 60rem; margin: 0 auto 0 auto; }
 
-@media only screen and (max-width: 60rem) { .container { margin: 0 1rem; } }
+@media only screen and (max-width: 900px) { .container { margin: 0 1rem; } }
 
 header, .header { display: flex; background: #42b391; font-family: "Laila", serif; font-size: 1.5rem; text-decoration: none; color: #FFF; z-index: 1; /* When the screen is small, hide links, Show  icon */ }
 
@@ -69,9 +69,9 @@ header nav__active, header .nav__active, .header nav__active, .header .nav__acti
 
 header nav__icon, header nav__icon--close, header .nav__icon, header .nav__icon--close, .header nav__icon, .header nav__icon--close, .header .nav__icon, .header .nav__icon--close { display: none; }
 
-@media screen and (max-width: 40rem) { header nav a, header .nav a, .header nav a, .header .nav a { display: none; } header nav__icon, header .nav__icon, .header nav__icon, .header .nav__icon { display: flex; } header .topnav--responsive, .header .topnav--responsive { flex-direction: column; } header .topnav--responsive a, .header .topnav--responsive a { display: flex; justify-content: flex-end; } header .topnav--responsive .nav__icon, .header .topnav--responsive .nav__icon { display: none; } header .topnav--responsive .nav__icon--close, .header .topnav--responsive .nav__icon--close { color: #ffd751; } }
+@media screen and (max-width: 900px) { header nav a, header .nav a, .header nav a, .header .nav a { display: none; } header nav__icon, header .nav__icon, .header nav__icon, .header .nav__icon { display: flex; } header .topnav--responsive, .header .topnav--responsive { flex-direction: column; } header .topnav--responsive a, .header .topnav--responsive a { display: flex; justify-content: flex-end; } header .topnav--responsive .nav__icon, .header .topnav--responsive .nav__icon { display: none; } header .topnav--responsive .nav__icon--close, .header .topnav--responsive .nav__icon--close { color: #ffd751; } }
 
 /* When the menu is open */
-@media screen and (max-width: 40rem) { .header__logo--responsive { margin: 1rem; } .header__logo--responsive .header__logo { height: 8rem; margin: auto 0 auto 0.5rem; } .header__logo--responsive .blob { top: 3rem; } .header__logo--responsive .blob1-1 { width: 10rem; height: 10rem; } .header__logo--responsive .blob1-2 { width: 10rem; height: 10rem; } }
+@media screen and (max-width: 900px) { .header__logo--responsive { margin: 1rem; } .header__logo--responsive .header__logo { height: 8rem; margin: auto 0 auto 0.5rem; } .header__logo--responsive .blob { top: 3rem; } .header__logo--responsive .blob1-1 { width: 10rem; height: 10rem; } .header__logo--responsive .blob1-2 { width: 10rem; height: 10rem; } }
 
 /*# sourceMappingURL=styles.css.map */
