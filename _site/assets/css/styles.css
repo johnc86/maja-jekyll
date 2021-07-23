@@ -76,7 +76,7 @@ header nav__icon, header nav__icon--close, header .nav__icon, header .nav__icon-
 
 .hero { display: flex; height: 30rem; margin-top: -4rem; position: relative; z-index: -10; }
 
-.hero__blend { background: linear-gradient(to bottom, var(--hero-ani-1), rgba(255, 255, 255, 0)); position: absolute; height: 20rem; content: ''; width: 100%; z-index: 10; }
+.hero__blend { background: linear-gradient(180deg, var(--hero-ani-1) 0%, var(--hero-ani-1) 5%, rgba(255, 255, 255, 0) 100%); position: absolute; height: 20rem; content: ''; width: 100%; z-index: 10; }
 
 .hero__ani { animation-name: changebg; animation-duration: 20s; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: ease-in-out; animation-fill-mode: backwards; }
 

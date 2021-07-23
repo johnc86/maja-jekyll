@@ -19,7 +19,7 @@ $aniduration: 20s;
     z-index: -10;
 
     &__blend {
-        background: linear-gradient(to $grad-direction, $hero-c1, $transparent);
+        background: linear-gradient(180deg, $hero-c1 0%, $hero-c1 5%, $transparent 100%);
     
         position: absolute;
         height: 20rem;
