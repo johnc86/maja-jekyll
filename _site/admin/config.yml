@@ -57,7 +57,7 @@ collections:
   files:
     - label: 'Navigation'
       name: 'navigation'
-      file: '_data/navigation.yml'
+      file: '_data/hero.yml'
       fields:
         - label: 'Navigation Items'
           name: 'items'
@@ -65,3 +65,13 @@ collections:
           fields:
             - { label: Name, name: name, widget: string }
             - { label: Link, name: link, widget: string }
+    - label: 'Hero Settings'
+      name: 'hero'
+      file: '_data/hero.yml'
+      fields:
+        - label: 'Hero Colours'
+          name: 'col'
+          widget: 'list'
+          fields:
+            - { label: Name, name: name, widget: string }
+            - { label: Color, name: col, widget: string }
