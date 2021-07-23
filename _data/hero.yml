@@ -1,3 +1,9 @@
-items:
-  - name: Hero Colour 1
+col:
+  - name: Mint
     col: rgba(66, 179, 145, 1)
+  - name: Muave
+    col: rgba(209, 186, 242, 1)
+  - name: United Nations Blue
+    col: rgba(83, 134, 218, 1)
+  - col: rgba(198, 128, 143, 1)
+    name: Puce

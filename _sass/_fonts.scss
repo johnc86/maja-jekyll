@@ -12,7 +12,7 @@ $f-header: 'Laila', serif;
 $f-text: 'Lato', sans-serif;
 $f-accent: 'Thasadith', sans-serif;
 
-p {
+p, a {
     font-family: $f-text;
     color: $c-black;
 }

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700");
 :root { --logo: black; }
 
-p { font-family: "Lato", sans-serif; color: #444A51; }
+p, a { font-family: "Lato", sans-serif; color: #444A51; }
 
 h1, h2 { font-family: "Laila", serif; font-weight: 600; color: #192a51; }
 
@@ -94,5 +94,13 @@ header nav__icon, header nav__icon--close, header .nav__icon, header .nav__icon-
   25% { background-color: var(--hero-ani-2); }
   75% { background-color: var(--hero-ani-3); }
   100% { background-color: var(--hero-ani-4); } }
+
+.post__container { display: grid; grid-template-columns: repeat(3, minmax(10px, 1fr)); grid-gap: 1rem; }
+
+.post__item { background: yellow; display: flex; }
+
+.post__image { width: 100%; height: 20rem; object-fit: cover; max-width: 20rem; max-height: 20rem; }
+
+footer { height: 10rem; }
 
 /*# sourceMappingURL=styles.css.map */

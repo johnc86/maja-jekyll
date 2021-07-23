@@ -1,0 +1,22 @@
+.post {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(10px, 1fr));
+        grid-gap: 1rem;
+    }
+
+    &__item {
+        background: yellow;
+        display: flex;
+        // width: 15rem;
+        // height: 15rem;
+    }
+
+    &__image {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+}
