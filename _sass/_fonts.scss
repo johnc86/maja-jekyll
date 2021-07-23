@@ -12,10 +12,9 @@ $f-header: 'Laila', serif;
 $f-text: 'Lato', sans-serif;
 $f-accent: 'Thasadith', sans-serif;
 
-p, a {
-    font-family: $f-text;
-    color: $c-black;
-}
+p {font-family: $f-text;}
+
+p, a {color: $c-black;}
 
 h1, h2 {
     font-family: $f-header;
@@ -23,8 +22,8 @@ h1, h2 {
     color: $c-1;
 }
 
-h3, h4, h5, h6 {
-    font-family: $f-header;
+h3, h4, h5, h6, .heading {
+    font-family: $f-header !important;
     font-weight: 300;
 }
 

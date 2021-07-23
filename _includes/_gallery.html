@@ -1,0 +1,26 @@
+<div class="gallery">
+    <div class="gallery__selector">
+        <ul>
+            <li><a href="#">writing</a></li>
+            <li><a href="#">textiles</a></li>
+            <li><a href="#">collage</a></li>
+        </ul>
+    </div>
+    <div class="gallery__container">
+        {% for post in site.posts %}
+        <a href="{{ post.url }}">
+            <div class="gallery__item">
+                    <img class="gallery__item__image" src="{{ post.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
+
+                    <div class="gallery__item__title heading">
+                        {{ post.title }}
+                    </div>
+                
+                
+            </div>
+        </a>
+    
+        {% endfor %}
+    </div>
+</div>
+

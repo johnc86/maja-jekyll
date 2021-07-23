@@ -6,8 +6,8 @@ backend:
 local_backend: true
 media_folder: 'assets/uploads'
 collections:
-- name: 'blog'
-  label: 'Blog'
+- name: 'posts'
+  label: 'Posts'
   folder: '_posts/'
   create: true
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -22,8 +22,16 @@ collections:
       label: 'Type', 
       name: 'type', 
       widget: 'select',
-      options: ["writing", "collage", "textiles", "other", "test"]
       }
+    - {
+      label: 'Category',
+      name: 'category',
+      widget: 'relation',
+      collection: 'categories',
+      display_fields: [category_name],
+      search_fields: [category_name],
+      value_field: 'category_name',
+    }
     - { label: 'Body', name: 'body', widget: 'markdown' }
 - name: 'pages'
   label: 'Pages'
@@ -62,3 +70,13 @@ collections:
           fields:
             - { label: Name, name: name, widget: string }
             - { label: Color, name: col, widget: string }
+- name: 'categories'
+  label: 'Categories'
+  folder: '_categories/'
+  create: true
+  editor:
+    preview: false
+  fields:
+    - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'default' }
+    - { label: 'Category Name', name: 'category_name', widget: 'string' }
+    - { label: 'Description', name: 'body', widget: 'markdown' }

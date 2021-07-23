@@ -1,22 +1,128 @@
-.post {
+$title-opacity--start: 0.9;
+$title-opacity--end: 0;
+$title-opacity-time: 0.5s;
+
+@mixin title-out {
+    animation-name: title-out;
+    animation-duration: $title-opacity-time;
+    animation-fill-mode: forwards;
+}
+
+@mixin title-in {
+    animation-name: title-in;
+    animation-duration: $title-opacity-time;
+    animation-fill-mode: forwards;
+}
+                
+.gallery {
+    &__selector {
+        display: flex;
+        margin: 1rem 0 1rem auto;
+
+        &:first-child {
+            margin-left: auto;
+        }
+
+        ul {
+            font-size: 1.7rem;
+            list-style-type: none;
+            display: flex;
+            margin: 0 0 0 auto;
+            padding: 0;
+
+            @media screen and (max-width: $mobilebreak) {
+                font-size: 1rem;
+                flex-wrap: wrap;
+            }
+        }
+
+        li:not(:last-child)::after {
+            content: '//';
+            padding: 0 1rem;
+        }
+
+        a {
+            text-decoration:none;
+            font-family: $f-header;
+            
+            &:hover {
+                color: $c-accent;
+            }
+        }
+    }
+
     &__container {
         display: grid;
-        grid-template-columns: repeat(3, minmax(10px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         grid-gap: 1rem;
     }
 
     &__item {
-        background: yellow;
+        // background: yellow;
         display: flex;
+        position: relative;
         // width: 15rem;
         // height: 15rem;
-    }
 
-    &__image {
-        width: 100%;
-        height: 20rem;
-        object-fit: cover;
-        max-width: 20rem;
-        max-height: 20rem;
+        &__image {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+            max-width: 20rem;
+            max-height: 20rem;
+
+            &:hover + .gallery__item__title {
+                @include title-out;
+            }
+
+            & + .gallery__item__title {
+                @include title-in;
+            }
+        }
+
+        &__overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0; left: 0;
+            background: pink;
+
+            
+        }
+
+
+        &__title {
+            position: absolute;
+            background: $c-white;
+            color: $c-black;
+            padding: 0.5rem 1rem;
+            top: 1rem;
+            right: 0;
+            font-size: 1.3rem;
+            opacity: $title-opacity--start;
+            overflow: hidden;
+
+            &:hover {
+                @include title-out;
+            }
+        }
     }
+}
+
+@keyframes title-out {
+    from {opacity: $title-opacity--start;}
+    to {opacity: $title-opacity--end;}
+}
+@-webkit-keyframes title-out {
+    from {opacity: $title-opacity--start;}
+    to {opacity: $title-opacity--end;}
+}
+
+@keyframes title-in {
+    from {opacity: $title-opacity--end;}
+    to {opacity: $title-opacity--start;}
+}
+@-webkit-keyframes title-in {
+    from {opacity: $title-opacity--end;}
+    to {opacity: $title-opacity--start;}
 }
