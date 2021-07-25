@@ -1,0 +1,81 @@
+$title-opacity--start: 0.9;
+$title-opacity--end: 0;
+$title-opacity-time: 0.5s;
+
+@mixin title-out {
+    animation-name: title-out;
+    animation-duration: $title-opacity-time;
+    animation-fill-mode: forwards;
+}
+
+@mixin title-in {
+    animation-name: title-in;
+    animation-duration: $title-opacity-time;
+    animation-fill-mode: forwards;
+}
+                
+.gallery {
+    &__item {
+        display: flex;
+        position: relative;
+
+        @media screen and (min-width: $mobilebreak) {
+            max-width: 15rem;
+            max-height: 15rem;
+        }
+
+        &__image {
+            max-width: 15rem;
+            max-height: 15rem;
+            min-height: 15rem;
+            min-width: 15rem;
+            object-fit: cover;
+            
+            &:hover + .gallery__item__title {
+                @include title-in;
+            }
+
+            & + .gallery__item__title {
+                @include title-out;
+            }
+        }
+
+        &__title {
+            position: absolute;
+            background: $c-white;
+            color: $c-black;
+            padding: 0.25rem 0.5rem;
+            bottom: 0.5rem;
+            left: 0.5rem;
+            font-size: 1rem;
+            opacity: $title-opacity--start;
+            overflow: hidden;
+
+            &:hover {
+                @include title-in;
+            }
+        }
+
+        &__desc {
+            
+        }
+    }
+}
+
+@keyframes title-out {
+    from {opacity: $title-opacity--start;}
+    to {opacity: $title-opacity--end;}
+}
+@-webkit-keyframes title-out {
+    from {opacity: $title-opacity--start;}
+    to {opacity: $title-opacity--end;}
+}
+
+@keyframes title-in {
+    from {opacity: $title-opacity--end;}
+    to {opacity: $title-opacity--start;}
+}
+@-webkit-keyframes title-in {
+    from {opacity: $title-opacity--end;}
+    to {opacity: $title-opacity--start;}
+}

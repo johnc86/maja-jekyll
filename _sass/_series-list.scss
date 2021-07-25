@@ -1,0 +1,47 @@
+.series-list {
+    display: flex;
+    flex-direction: column;
+
+    a {text-decoration:none;}
+
+    &__item {
+        display: flex;
+        margin: 2rem;
+
+        @media screen and (max-width: $mobilebreak) {
+            flex-wrap: wrap;
+            padding-bottom: 5rem;
+            border-bottom: 3px solid $c-primary;
+        }
+    }
+
+    &__text {
+        margin: auto;
+
+        @media only screen and (min-width: $pagewidth) {
+            margin-left: 2rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__title {
+        font-size: 4rem;
+    }
+
+
+    &__image {
+        max-height: 20rem;
+        object-fit: contain;
+        min-width: 20rem;
+        margin: auto;
+
+        @media only screen and (max-width: $pagewidth) {
+            min-width: 10rem;
+            width: 100%;
+            margin: 2rem;
+        }
+    }
+}

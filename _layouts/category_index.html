@@ -2,38 +2,20 @@
 layout: fullwidth
 ---
 
-{% for cat in site.categories %}
-    <section class="gallery__series">
-        <div class="gallery__series__item">
-            <img class="gallery__series__image" src="https://source.unsplash.com/random" />
-            <div>
-                <div class="gallery__series__title">
-                    {{cat[0]}}
+<section class="series-list container">
+    {% for ser in site.series %}
+    {% assign ser-post = site.posts | where: 'series', ser.series_name | first %}
+        <div class="series-list__item linkdiv">
+            <a href="{{ser.url}}"></a>
+            <img class="series-list__image" src="{{ ser-post.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
+            <div class="series-list__text">
+                <div class="series-list__title">
+                    <h2>{{ser.series_name}}</h2>
                 </div>
-                <div class="gallery__series__text">
-                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sunt rem consequatur nisi in rerum itaque reiciendis iure minima maxime totam ab quia, quas molestiae inventore. Sint accusantium pariatur esse!</span><span>Distinctio deserunt consectetur sed optio omnis tempora labore nulla, reiciendis nam laudantium possimus, eveniet aperiam iusto velit incidunt, quis accusamus placeat a! Cupiditate, aspernatur. Eius ratione suscipit iure debitis nemo!</span></p>
+                <div class="series-list__desc">
+                    {{ ser.content }}    
                 </div>
             </div>
-            <div class="gallery__series__imagecontainer">
-                
-            </div>
-            <a href=""></a>
         </div>
-    </section>
-{% endfor %}
-
-
-
-
-
-
-<!-- 
-
-<div class="gallery__item linkdiv">
-    <img class="gallery__item__image" src="{{ post.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
-    <div class="gallery__item__title">
-        {{ post.title }}
-    </div>
-    <a href="{{ post.url }}"></a>
-</div>
--->
+    {% endfor %}
+</section>

@@ -1,3 +1,15 @@
+@import 'util';
+@import 'fonts';
+
+@import 'header';
+@import 'hero';
+@import 'footer';
+
+@import 'gallery';
+@import 'series-list';
+@import 'series';
+@import 'post';
+
 html, body {
     box-sizing: border-box;
     padding: 0;
@@ -12,6 +24,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    // background: darkgrey;
 }
 
 *, *:before, *:after {
@@ -19,16 +32,17 @@ body {
 }
 
 .container {
-    max-width: 60rem;
+    max-width: $pagewidth;
     margin:0 auto 0 auto;
     
     @media only screen and (max-width: $pagewidth) {
         margin: 0 1rem;
     }
 
-    // margin: 0 3rem;
+    // background: white;
 }
 
 .linkdiv:hover {
     cursor: pointer;
 }
+

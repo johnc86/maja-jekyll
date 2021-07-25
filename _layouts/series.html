@@ -1,0 +1,24 @@
+--- 
+layout: default 
+---
+
+{% assign series = site.posts | where: 'series', page.series_name %}
+
+<div class="container">
+    <div class="series">
+        <div class="series__title"><h2>{{ page.series_name }}</h2></div>
+        <div class="series__desc">{{ content }}</div>
+    </div>
+    
+    <section class="gallery__container">
+        {% for post in series %}
+            <div class="gallery__item linkdiv">
+                <img class="gallery__item__image" src="{{ post.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
+                <div class="gallery__item__title">
+                    {{ post.title }}
+                </div>
+                <a href="{{ post.url }}"></a>
+            </div>
+        {% endfor %}
+    </section>
+</div>

@@ -2,7 +2,7 @@ items:
   - name: Home
     link: /
   - name: Gallery
-    link: /category/
+    link: /category/index.html
   - name: Writing
     link: /writing.html
   - name: Contact

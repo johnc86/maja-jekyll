@@ -1,18 +1,15 @@
 --- 
 layout: default 
 ---
-
-<h1>{{ page.title }}</h1>
-<img class="gallery__item__image" src="{{ page.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
-
-
-<p>
-    {{ page.date | date_to_string }} 
-    {% assign series = site.series | where: 'name', page.series %} 
+<div class="post">
     
-    {% if author %}
-        <a href="{{ series.url }}">{{ series.name }}</a>
-    {% endif %}
-</p>
-
-{{ content }}
+    <img class="post__image" src="{{ page.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
+    <div class="post__text">
+        <div class="post__title">
+            <h4>{{ page.title }}</h4>
+        </div>
+        <div class="post__desc">
+            {{ content }}
+        </div>
+    </div>
+</div>

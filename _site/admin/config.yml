@@ -52,16 +52,6 @@ collections:
       options: ["writing", "gallery"]
     }
     - {
-      label: 'Category',
-      name: 'categories',
-      widget: 'relation',
-      collection: 'categories',
-      display_fields: [category_name],
-      search_fields: [category_name],
-      value_field: 'category_name',
-      required: false
-    }
-    - {
       label: 'Series',
       name: 'series',
       widget: 'relation',
@@ -104,6 +94,7 @@ collections:
     }
 - name: 'series'
   output: true
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
   label: 'Image Series'
   folder: '_series/'
   create: true
@@ -114,7 +105,7 @@ collections:
       label: 'Layout', 
       name: 'layout', 
       widget: 'hidden', 
-      default: 'default' 
+      default: 'series' 
     }
     - { 
       label: 'Series Name', 
@@ -122,11 +113,10 @@ collections:
       widget: 'string' 
     }
     - { 
-      label: 'Images', 
-      name: 'images', 
-      widget: 'list', 
-      required: false,
-      field: { label: Image, name: image, widget: image }
+      label: 'Description', 
+      name: 'body', 
+      widget: 'markdown', 
+      required: false 
     }
 
 - name: 'pages'
