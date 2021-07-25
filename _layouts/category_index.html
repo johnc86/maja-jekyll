@@ -1,0 +1,82 @@
+---
+layout: fullwidth
+---
+
+
+<div class="container">
+    <!-- <h1>{{ page.title }}</h1> -->
+    <div class="gallery__selector">
+        <ul>
+            <li class="gallery__selector--title"></li>
+                    <li><a href="{{site.url}}/category/">all</a></li>
+            
+            {% for cat in site.categories %}
+                    <li><a href="{{site.url}}/category/{{ cat[0] | slugify }}">{{ cat[0] | downcase }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+{% if page.title == 'Gallery'%}
+    {% assign category = site.posts | where: 'type', 'gallery' %}
+{% else %}        
+    {% assign category = page.posts | where: 'type', 'gallery' %}
+{% endif %}
+
+<section class="gallery__container">
+    {% for post in category %}
+        {% if post.series %}
+            </section><section class="gallery__series">
+                <a href="{{ post.url }}">
+                    <div class="gallery__series__container">
+                        <div class="gallery__series__item">
+                            <div class="gallery__series__title">
+                                {{post.series}}
+                            </div>
+                            <div class="gallery__series__text">
+                                {{post.content}}
+                            </div>
+                            <div class="gallery__series__imagecontainer" style="background: url('{{ post.image }}')">
+                                <!-- <img class="gallery__series__image" src="" alt="{{ post.title | default: 'image representing a theme in this article' }}" /> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section><section class="gallery__container">
+
+
+        {% elsif post.image %}
+            <div class="gallery__item linkdiv">
+                <img class="gallery__item__image" src="{{ post.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
+                <div class="gallery__item__title">
+                    {{ post.title }}
+                </div>
+                <a href="{{ post.url }}"></a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</section>
+
+
+<!-- START SUB IMAGES -->
+<!-- <div class="gallery__series__image--subcontainer">
+    {% assign series = site.series | where: 'series_name', post.series %}
+    {% for x in series %}
+        {% for subimg in x.images %}
+            <img src="{{ subimg }}" class="gallery__series__image--sub">
+        {% endfor %}
+    {% endfor %}
+</div> -->
+<!-- END SUB IMAGES -->
+
+  <!-- FOR DEV TESTING.. TO IDENTIFY TYPES AND CATS OF POSTS -->
+<!-- <div class="gallery__item__title" style="top: 5rem; color: red;">
+        {{ post.type}}
+    </div>
+    <div class="gallery__item__title" style="top: 10rem; color: orange;">
+        {{ post.category }}
+    </div>
+    <div class="gallery__item__title" style="top: 15rem; color: green;">
+        {{ post.series }}
+    </div> -->
