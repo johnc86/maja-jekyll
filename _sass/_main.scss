@@ -19,14 +19,14 @@ body {
 }
 
 .container {
-    // max-width: 60rem;
-    // margin:0 auto 0 auto;
+    max-width: 60rem;
+    margin:0 auto 0 auto;
     
-    // @media only screen and (max-width: $pagewidth) {
-    //     margin: 0 1rem;
-    // }
+    @media only screen and (max-width: $pagewidth) {
+        margin: 0 1rem;
+    }
 
-    margin: 0 3rem;
+    // margin: 0 3rem;
 }
 
 .linkdiv:hover {

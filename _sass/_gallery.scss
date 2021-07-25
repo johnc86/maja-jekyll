@@ -57,10 +57,6 @@ $title-opacity-time: 0.5s;
     &__item {
         display: flex;
         position: relative;
-        
-        & + .gallery__item {
-            margin-left: 5rem;
-        }
 
         @media screen and (min-width: $mobilebreak) {
             max-width: 15rem;
@@ -103,7 +99,7 @@ $title-opacity-time: 0.5s;
     &__series {
         margin-top: 2rem;
         margin-bottom: 2rem;
-        background: $c-light;
+        // background: $c-light;
         padding: 2rem 0 3rem 0;
 
         a {text-decoration:none;}
@@ -141,7 +137,7 @@ $title-opacity-time: 0.5s;
         }
 
         &__image {
-            // max-height: 21rem;
+            max-height: 21rem;
             object-fit: contain;
             // padding: 1rem;
             // margin-bottom: auto;
