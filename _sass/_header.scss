@@ -1,11 +1,19 @@
 header, .header {
     display: flex;
-    background: $c-accent;
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
+
+    background: $c-primary;
     font-family: $f-header;
     font-size: 1.5rem;
     text-decoration: none;
     color: $c-white;
     z-index: 1;
+
+    // &__padding { USED FOR STICKY HEADER BUT BREAKS HOMEPAGE
+    //     margin-bottom: 5rem;
+    // }
 
     &__logo {
         height: 3rem;

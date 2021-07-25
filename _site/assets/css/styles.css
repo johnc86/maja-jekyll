@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant&family=Laila:wght@300;600");
-@import url("https://fonts.googleapis.com/css2?family=family=Lato:wght@300");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700");
 :root { --logo: black; }
 
-p { font-family: "Lato", sans-serif; }
+body, p { font-family: "Lato", sans-serif; }
 
-p, a { color: #444A51; }
+p, a { color: #192a51; }
 
 h1, h2 { font-family: "Laila", serif; font-weight: 600; color: #192a51; }
 
@@ -25,13 +25,15 @@ h6 { font-size: 1rem; }
 
 .accent { font-family: "Thasadith", sans-serif; font-weight: 400; font-size: 1.4rem; }
 
-html, body { box-sizing: border-box; padding: 0; margin: 0; }
+html, body { box-sizing: border-box; padding: 0; margin: 0; min-height: 100vh; }
+
+body { display: flex; flex-direction: column; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
-.container { max-width: 60rem; margin: 0 auto 0 auto; }
+.container, .gallery__series__container, .gallery__container { margin: 0 3rem; }
 
-@media only screen and (max-width: 900px) { .container { margin: 0 1rem; } }
+.linkdiv:hover { cursor: pointer; }
 
 header, .header { display: flex; background: #42b391; font-family: "Laila", serif; font-size: 1.5rem; text-decoration: none; color: #FFF; z-index: 1; /* When the screen is small, hide links, Show  icon */ }
 
@@ -78,11 +80,11 @@ header nav__icon, header nav__icon--close, header .nav__icon, header .nav__icon-
 
 .hero { display: flex; height: 30rem; margin-top: -4rem; position: relative; z-index: -10; }
 
-.hero__blend { background: linear-gradient(180deg, var(--hero-ani-1) 0%, var(--hero-ani-1) 5%, rgba(255, 255, 255, 0) 100%); position: absolute; height: 20rem; content: ''; width: 100%; z-index: 10; }
+.hero__blend { background: linear-gradient(180deg, var(--hero-ani-1) 0%, var(--hero-ani-1) 5%, rgba(255, 255, 255, 0) 100%); position: absolute; height: 20rem; content: ''; width: 100%; z-index: 10; top: 3rem; }
 
 .hero__ani { animation-name: changebg; animation-duration: 20s; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: ease-in-out; animation-fill-mode: backwards; }
 
-.hero__diag { transform: skewY(-5deg); z-index: -10; position: relative; }
+.hero__diag { transform: skewY(-5deg); z-index: -10; position: relative; width: 100%; }
 
 .hero__msgcontainer { width: 90%; height: 90%; max-height: 20rem; max-width: 30rem; margin: auto; padding: 2rem; background: #fff; display: flex; justify-content: center; align-items: center; min-width: 23rem; z-index: 20; margin-top: 3rem; }
 
@@ -92,40 +94,66 @@ header nav__icon, header nav__icon--close, header .nav__icon, header .nav__icon-
 
 .hero__msg h3 { font-size: 2.4rem; }
 
+@media screen and (max-width: 450px) { .hero__msg h1 { font-size: 2.4rem; } .hero__msg h3 { font-size: 1.4rem; } .hero__msgcontainer { min-width: 70%; width: 70%; height: 70%; } }
+
 @keyframes changebg { 0% { background-color: var(--hero-ani-1); }
   25% { background-color: var(--hero-ani-2); }
   75% { background-color: var(--hero-ani-3); }
   100% { background-color: var(--hero-ani-4); } }
 
-.gallery__selector { display: flex; margin: 1rem 0 1rem auto; }
+.gallery__selector { display: flex; font-family: "Laila", serif; }
 
-.gallery__selector:first-child { margin-left: auto; }
-
-.gallery__selector ul { font-size: 1.7rem; list-style-type: none; display: flex; margin: 0 0 0 auto; padding: 0; }
+.gallery__selector ul { font-size: 1.2rem; list-style-type: none; display: flex; padding: 0; }
 
 @media screen and (max-width: 900px) { .gallery__selector ul { font-size: 1rem; flex-wrap: wrap; } }
 
-.gallery__selector li:not(:last-child)::after { content: '//'; padding: 0 1rem; }
+.gallery__selector li:not(:last-child):not(:first-child)::after { content: '|'; padding: 0 1rem; }
 
 .gallery__selector a { text-decoration: none; font-family: "Laila", serif; }
 
-.gallery__selector a:hover { color: #42b391; }
+.gallery__selector a:hover { color: #ffd751; }
 
-.gallery__container { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); grid-gap: 1rem; }
+.gallery__container { display: flex; flex-wrap: wrap; }
 
 .gallery__item { display: flex; position: relative; }
 
-.gallery__item__image { width: 100%; height: 20rem; object-fit: cover; max-width: 20rem; max-height: 20rem; }
+.gallery__item + .gallery__item { margin-left: 5rem; }
 
-.gallery__item__image:hover + .gallery__item__title { animation-name: title-out; animation-duration: 0.5s; animation-fill-mode: forwards; }
+@media screen and (min-width: 900px) { .gallery__item { max-width: 15rem; max-height: 15rem; } }
 
-.gallery__item__image + .gallery__item__title { animation-name: title-in; animation-duration: 0.5s; animation-fill-mode: forwards; }
+.gallery__item__image { max-width: 15rem; max-height: 15rem; min-height: 15rem; min-width: 15rem; object-fit: cover; }
 
-.gallery__item__overlay { position: absolute; height: 100%; width: 100%; top: 0; left: 0; background: pink; }
+.gallery__item__image:hover + .gallery__item__title { animation-name: title-in; animation-duration: 0.5s; animation-fill-mode: forwards; }
 
-.gallery__item__title { position: absolute; background: #FFF; color: #444A51; padding: 0.5rem 1rem; top: 1rem; right: 0; font-size: 1.3rem; opacity: 0.9; overflow: hidden; }
+.gallery__item__image + .gallery__item__title { animation-name: title-out; animation-duration: 0.5s; animation-fill-mode: forwards; }
 
-.gallery__item__title:hover { animation-name: title-out; animation-duration: 0.5s; animation-fill-mode: forwards; }
+.gallery__item__title { position: absolute; background: #FFF; color: #192a51; padding: 0.25rem 0.5rem; bottom: 0.5rem; left: 0.5rem; font-size: 1rem; opacity: 0.9; overflow: hidden; }
+
+.gallery__item__title:hover { animation-name: title-in; animation-duration: 0.5s; animation-fill-mode: forwards; }
+
+.gallery__series { margin-top: 2rem; margin-bottom: 2rem; background: #bbb; padding: 2rem 0 3rem 0; }
+
+.gallery__series a { text-decoration: none; }
+
+.gallery__series__container { display: flex; }
+
+.gallery__series__item { display: flex; position: relative; align-items: flex-start; }
+
+@media screen and (max-width: 900px) { .gallery__series__item { flex-wrap: wrap; } }
+
+.gallery__series__item > * { padding: 0 1rem; }
+
+.gallery__series__title { font-size: 4rem; }
+
+.gallery__series__text { margin-top: 1rem; }
+
+.gallery__series__image { object-fit: contain; }
+
+.gallery__series__imagecontainer { display: flex; flex-direction: row; height: 100%; min-height: 100%; width: 30%; min-width: 30%; }
+
+.gallery__series__image--sub { height: 9rem; width: 9rem; object-fit: cover; padding: 1rem; }
+
+.gallery__series__image--subcontainer { display: flex; flex-wrap: wrap; }
 
 @keyframes title-out { from { opacity: 0.9; }
   to { opacity: 0; } }
@@ -139,6 +167,10 @@ header nav__icon, header nav__icon--close, header .nav__icon, header .nav__icon-
 @-webkit-keyframes title-in { from { opacity: 0; }
   to { opacity: 0.9; } }
 
-footer { height: 10rem; }
+footer, .footer { display: flex; background: #bbb; margin-top: auto; color: #FFF; padding: 0.5rem; font-family: "Laila", serif; font-size: 1rem; }
+
+footer__spacer, .footer__spacer { margin-top: 3rem; }
+
+footer__sitename, .footer__sitename { margin-left: auto; }
 
 /*# sourceMappingURL=styles.css.map */

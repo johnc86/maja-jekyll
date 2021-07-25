@@ -2,6 +2,6 @@
 layout: default
 title: Writing
 ---
-# Writing
+# {{ page.title}}
 
-This is my writing.
+{% include _writing.html %}

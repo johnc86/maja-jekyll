@@ -3,15 +3,15 @@ $space-cadet: rgba(25, 42, 81, 1);
 $mint: rgba(66, 179, 145, 1);
 $mustard: rgba(255, 215, 81, 1);
 $cg-red: rgba(219, 58, 52, 1);
+$french-sky-blue: rgba(106, 172, 240, 1);
 
-$c-1: $space-cadet;
-$c-2: #444444;
-$c-accent: $mint;
-$c-accent2: $mustard;
+$c-primary: $mint;
+$c-secondary: $mustard;
 $c-bg: #FFF;
 $c-bg2: $lemon-meringue;
 $c-white: #FFF;
-$c-black: #444A51;
+$c-light: #bbb;
+$c-black: $space-cadet;
 $alert: $cg-red;
 
 :root {

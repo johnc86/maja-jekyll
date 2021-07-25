@@ -1,2 +1,9 @@
-<script src= {{ "/assets/js/netlifyIdentify.js" | absolute_url }}></script> 
-<script src={{ "/assets/js/nav.js" | absolute_url }}></script>
+<script src="/assets/js/jquery.js"></script> 
+<script src="/assets/js/netlifyIdentify.js"></script> 
+<script src="/assets/js/nav.js"></script>
+<script>
+    $(".linkdiv").click(function() {
+        window.location = $(this).find("a").attr("href"); 
+        return false;
+    });
+</script>

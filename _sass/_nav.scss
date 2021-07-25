@@ -13,12 +13,12 @@ nav, .nav {
         }
 
         &:hover {
-            color: $c-accent2;
+            color: $c-secondary;
         }
     }
 
     &__active {
-        color: $c-1;
+        color: $c-black;
     }
 
     &__icon, &__icon--close {
@@ -53,7 +53,7 @@ nav, .nav {
                 display: none;
 
                 &--close {
-                    color: $c-accent2;
+                    color: $c-secondary;
                 }
             }
         }

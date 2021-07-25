@@ -70,7 +70,7 @@
             home
     </a>
     
-    <a href="/gallery.html" 
+    <a href="/category/" 
         >
             gallery
     </a>
@@ -87,7 +87,7 @@
     
 </nav>
 </header>
-
+<div class="header__padding"></div>
     <style>
     :root {
         --hero-ani-1: rgba(66, 179, 145, 1);
@@ -97,22 +97,33 @@
     }
 </style>
 
-<div class="hero__blend">
-    <div class="hero__msgcontainer">
-        <div class="hero__msg hero__ani">
-            <h1>Maja Lorkowska</h1>
-            <h3>ma-ya lor-kov-ska.</h3>
+<div class="hero">
+    <div class="hero__blend">
+        <div class="hero__msgcontainer">
+            <div class="hero__msg hero__ani">
+                <h1>Maja Lorkowska</h1>
+                <h3>ma-ya lor-kov-ska.</h3>
+            </div>
         </div>
     </div>
+    <div class="hero hero__ani hero__diag"></div>
 </div>
-<div class="hero hero__ani hero__diag"></div>
 
-    <footer>
-footer
+    <div class="footer__spacer"></div>
+<footer>
+    (social links here) <div class="footer__sitename">Maja Lorkowska</div>
 </footer>
 
-    <script src= /assets/js/netlifyIdentify.js></script> 
-<script src=/assets/js/nav.js></script>
+    <script src="/assets/js/jquery.js"></script> 
+<script src="/assets/js/netlifyIdentify.js"></script> 
+<script src="/assets/js/nav.js"></script>
+<script>
+    $(".linkdiv").click(function() {
+        window.location = $(this).find("a").attr("href"); 
+        return false;
+    });
+</script>
+
 </body>
 
 </html>

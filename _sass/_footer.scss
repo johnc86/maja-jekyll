@@ -1,3 +1,19 @@
-footer {
-    height: 10rem;
+footer, .footer {
+    display: flex;
+    background: $c-light;
+    margin-top: auto;
+    color: $c-white;
+    padding: 0.5rem;
+    font-family: $f-header;
+    font-size: 1rem;
+
+    &__spacer {
+        margin-top:3rem;
+    }
+
+    &__sitename {
+        margin-left: auto;
+    }
+
+
 }
