@@ -19,8 +19,8 @@ header, .header {
         height: 3rem;
         z-index: 5;
         min-width: 6rem;
-        fill: $c-black;
-        line: $c-black;
+        fill: $c-logo;
+        line: $c-logo;
 
         &--container, &--responsive {
             display: flex;

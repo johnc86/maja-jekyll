@@ -1,5 +1,6 @@
 ---
 layout: post
+is_post: true
 title: Tropical vibes, can't remember title
 date: 2021-07-25T13:54:30.528Z
 image: /assets/uploads/collage-4.jpg

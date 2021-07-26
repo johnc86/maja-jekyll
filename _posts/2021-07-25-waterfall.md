@@ -1,5 +1,6 @@
 ---
 layout: post
+is_post: true
 title: Waterfall
 date: 2021-07-25T13:55:37.336Z
 image: /assets/uploads/tapestry.jpg

@@ -1,5 +1,6 @@
 ---
 layout: post
+is_post: true
 title: Embroidery 3
 date: 2021-07-25T13:58:02.744Z
 image: /assets/uploads/embroidery-3.jpg

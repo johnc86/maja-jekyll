@@ -1,4 +1,4 @@
-<header class="{%if page.index != true %} primaryfade {% endif %}">
+<header class="{%if page.is_post == true %} primaryfade {% endif %}">
     <a href="{{site.url}}">
         <div class="header__logo--container" id="logo">
             {% include _anilogo.html %}
