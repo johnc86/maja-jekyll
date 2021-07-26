@@ -1,8 +1,8 @@
 items:
   - name: Home
     link: /
-  - name: Gallery
-    link: /category/index.html
+  - name: Artwork
+    link: /artwork.html
   - name: Writing
     link: /writing.html
   - name: Contact
