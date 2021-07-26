@@ -46,3 +46,14 @@ body {
     cursor: pointer;
 }
 
+// fade out header / footer globally
+.primaryfade {
+    animation: primaryfade 10s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes primaryfade {
+    0% {background: $c-primary;}
+    100% {background: $c-light;}
+}

@@ -8,8 +8,6 @@ footer, .footer {
     font-family: $f-header;
     font-size: 1rem;
 
-    animation: footerfade 15s;
-
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -49,6 +47,6 @@ footer, .footer {
 }
 
 @keyframes footerfade {
-    0% {background: $c-primary;}
-    100% {background: $c-light;}
+    from {background: $c-primary;}
+    to   {background: $c-light;}
 }

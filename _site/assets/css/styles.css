@@ -29,7 +29,7 @@ h6 { font-size: 1rem; }
 
 .accent { font-family: "Thasadith", sans-serif; font-weight: 400; font-size: 1.4rem; }
 
-header, .header { display: flex; background: var(--c-primary); font-family: "Laila", serif; font-size: 1.5rem; text-decoration: none; color: var(--c-white); z-index: 1; animation: headerfade 15s; /* When the screen is small, hide links, Show  icon */ }
+header, .header { display: flex; background: var(--c-primary); font-family: "Laila", serif; font-size: 1.5rem; text-decoration: none; color: var(--c-white); z-index: 1; /* When the screen is small, hide links, Show  icon */ }
 
 header__logo, .header__logo { height: 3rem; z-index: 5; min-width: 6rem; fill: var(--c-black); line: var(--c-black); }
 
@@ -79,9 +79,6 @@ header #nav__button, .header #nav__button { animation: typing 4s; white-space: n
 /* When the menu is open */
 @media screen and (max-width: 940px) { .header__logo--responsive { margin: 1rem; } .header__logo--responsive .header__logo { height: 6rem; margin: 2rem 0 auto 0.5rem; fill: var(--c-black); line: var(--c-black); } .header__logo--responsive .blob { top: 3rem; } .header__logo--responsive .blob1-1 { width: 10rem; height: 10rem; } .header__logo--responsive .blob1-2 { width: 10rem; height: 10rem; } }
 
-@keyframes headerfade { 0% { background: var(--c-primary); }
-  100% { background: var(--c-light); } }
-
 .hero { display: flex; height: 35rem; margin-top: -4rem; position: relative; z-index: -10; }
 
 .hero__blend { background: linear-gradient(180deg, var(--hero-ani-1) 0%, var(--hero-ani-1) 5%, var(--c-transparent) 100%); position: absolute; height: 20rem; content: ''; width: 100%; z-index: 10; top: 3rem; }
@@ -105,7 +102,7 @@ header #nav__button, .header #nav__button { animation: typing 4s; white-space: n
   75% { background-color: var(--hero-ani-3); }
   100% { background-color: var(--hero-ani-4); } }
 
-footer, .footer { display: flex; background: var(--c-primary); margin-top: auto; color: var(--c-white); font-family: "Laila", serif; font-size: 1rem; animation: footerfade 15s; position: fixed; bottom: 0; width: 100%; }
+footer, .footer { display: flex; background: var(--c-primary); margin-top: auto; color: var(--c-white); font-family: "Laila", serif; font-size: 1rem; position: fixed; bottom: 0; width: 100%; }
 
 footer__spacer, .footer__spacer { margin-top: 3rem; }
 
@@ -121,8 +118,8 @@ footer__social--text, .footer__social--text { padding: 0 0.5rem; }
 
 footer__social--textsvg, .footer__social--textsvg { fill: var(--c-white); }
 
-@keyframes footerfade { 0% { background: var(--c-primary); }
-  100% { background: var(--c-light); } }
+@keyframes footerfade { from { background: var(--c-primary); }
+  to { background: var(--c-light); } }
 
 .gallery__selector { display: flex; font-family: "Laila", serif; }
 
@@ -213,5 +210,10 @@ body { display: flex; flex-direction: column; background: var(--c-sitebg); }
 @media only screen and (max-width: 940px) { .container, .gallery__container { margin: 0 1rem; } }
 
 .linkdiv:hover { cursor: pointer; }
+
+.primaryfade { animation: primaryfade 10s; animation-iteration-count: 1; animation-fill-mode: forwards; }
+
+@keyframes primaryfade { 0% { background: var(--c-primary); }
+  100% { background: var(--c-light); } }
 
 /*# sourceMappingURL=styles.css.map */
