@@ -11,6 +11,8 @@ header, .header {
     color: $c-white;
     z-index: 1;
 
+    animation: headerfade 15s;
+
     // &__padding { USED FOR STICKY HEADER BUT BREAKS HOMEPAGE
     //     margin-bottom: 5rem;
     // }
@@ -61,4 +63,9 @@ header, .header {
         }
 
     }
+}
+
+@keyframes headerfade {
+    0% {background: $c-primary;}
+    100% {background: $c-light;}
 }

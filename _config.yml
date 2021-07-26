@@ -20,8 +20,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-category-pages
 
 collections:
   series:

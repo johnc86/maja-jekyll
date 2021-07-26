@@ -1,10 +1,18 @@
+$footer-text-color: $c-white;
+
 footer, .footer {
     display: flex;
-    background: $c-light;
+    background: $c-primary;
     margin-top: auto;
-    color: $c-white;
+    color: $footer-text-color;
     font-family: $f-header;
     font-size: 1rem;
+
+    animation: footerfade 15s;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
     &__spacer {
         margin-top:3rem;
@@ -27,15 +35,20 @@ footer, .footer {
         
         &--icon {
             font-size: 1.3rem;
-            color: var(--c-black);
+            color: $footer-text-color;
         }
 
         &--text {
             padding: 0 0.5rem;
 
             &svg {
-                fill: var(--c-black);
+                fill: $footer-text-color;
             }
         }
     }
+}
+
+@keyframes footerfade {
+    0% {background: $c-primary;}
+    100% {background: $c-light;}
 }
