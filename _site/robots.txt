@@ -1,1 +1,1 @@
-Sitemap: http://www.majalorkowska.com/sitemap.xml
+Sitemap: https://www.majalorkowska.com/sitemap.xml

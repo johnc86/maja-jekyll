@@ -1,8 +1,10 @@
 <header>
-    <div class="header__logo--container linkdiv" id="logo">
-        {% include _anilogo.html %}
-        <a href="{{site.url}}"></a>
-    </div>
+    <a href="{{site.url}}">
+        <div class="header__logo--container" id="logo">
+            {% include _anilogo.html %}
+            
+        </div>
+    </a>
     {% include  _navigation.html %}
 </header>
 <div class="header__padding"></div>
