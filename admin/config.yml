@@ -5,7 +5,6 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 local_backend: true
 media_folder: 'assets/uploads'
-url: 'http://www.majalorkowska.com'
 
 # Categories
 permalink: /:year/:month/:day/:title:output_ext  # required for jekyll-category-pages
