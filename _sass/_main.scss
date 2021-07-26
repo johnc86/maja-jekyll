@@ -24,7 +24,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    // background: darkgrey;
+    background: var(--c-sitebg);
 }
 
 *, *:before, *:after {

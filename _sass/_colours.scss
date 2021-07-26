@@ -1,19 +1,54 @@
-$lemon-meringue: rgba(246, 239, 203, 1);
-$space-cadet: rgba(25, 42, 81, 1);
-$mint: rgba(66, 179, 145, 1);
-$mustard: rgba(255, 215, 81, 1);
-$cg-red: rgba(219, 58, 52, 1);
-$french-sky-blue: rgba(106, 172, 240, 1);
 
-$c-primary: $mint;
-$c-secondary: $mustard;
-$c-bg: #FFF;
-$c-bg2: $lemon-meringue;
-$c-white: #FFF;
-$c-light: #bbb;
-$c-black: $space-cadet;
-$alert: $cg-red;
+// Setup Sass Variables:
+$transparent: rgba(255,255,255,0);
+$c-white: var(--c-white);
+$c-light: var(--c-light);
+$c-black: var(--c-black);
 
+$hero-c1: var(--hero-ani-1);
+$hero-c2: var(--hero-ani-2);
+$hero-c3: var(--hero-ani-3);
+$hero-c4: var(--hero-ani-4);
+
+$c-primary: var(--c-primary);
+$c-secondary: var(--c-secondary);
+$c-bg: var(--c-bg);
+$c-bg2: var(--c-bg2);
+$alert: var(--c-alert);
+
+// Define actual colours as CSS variables:
 :root {
-    --logo: black;
+    // Generl utility colours
+    --c-transparent:    hsla(0, 0%, 100%, 0);   // zero alpha!
+    --c-white:          hsl(0, 0%, 100%);       // #fff
+    --c-light:          hsl(0, 0%, 73%);        // #bbb
+    --c-black:          hsl(222, 53%, 21%);     // space-cadet
+
+
+
+    // Site colours
+    --c-sitebg:         white;     
+    --c-primary:        hsl(162, 46%, 48%);     // mint
+    --c-secondary:      hsl(46, 100%, 66%);     // mustard
+    --c-bg:             hsl(0, 0%, 100%);       // #fff
+    --c-bg2:            hsl(50, 70%, 88%);      // lemon-meringue
+    --c-alert:          hsl(2, 70%, 53%);       // cg-red
+
+    // Logo colours
+    --c-blob1:            hsl(0, 0%, 100%);       // White
+    --c-blob2:            hsl(46, 100%, 66%);     // mustard
+    
+    // Animation colours
+    --hero-ani-1:       hsl(162, 46%, 48%);     // Mint
+    --hero-ani-2:       hsl(265, 68%, 84%);     // Mauve
+    --hero-ani-3:       hsl(217, 65%, 59%);     // French-sky-blue
+    --hero-ani-4:       hsl(347, 38%, 64%);     // Puce
+
+
+
+        // DARK THEME
+        // --c-sitebg:         black;     // ?
+        // --c-black:          hsl(0, 0%, 100%);       // #fff
+        // --c-light:          #333;        // #bbb
+        // --c-white:          hsl(222, 53%, 21%);     // space-cadet
 }

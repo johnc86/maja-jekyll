@@ -3,7 +3,6 @@ footer, .footer {
     background: $c-light;
     margin-top: auto;
     color: $c-white;
-    padding: 0.5rem;
     font-family: $f-header;
     font-size: 1rem;
 
@@ -12,8 +11,31 @@ footer, .footer {
     }
 
     &__sitename {
-        margin-left: auto;
+        margin: auto 1rem auto auto;
     }
 
+    &__social {
+        display: flex;
+        margin: auto;
+        padding: 0.5rem;
 
+        a {
+            display: inline-flex;
+            text-decoration: none;
+            margin: 0 2rem;
+        }
+        
+        &--icon {
+            font-size: 1.3rem;
+            color: var(--c-black);
+        }
+
+        &--text {
+            padding: 0 0.5rem;
+
+            &svg {
+                fill: var(--c-black);
+            }
+        }
+    }
 }

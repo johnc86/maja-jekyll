@@ -1,8 +1,8 @@
 
 $speed1: 30s;
 $speed2: 60s;
-$color1: $c-white;
-$color2: $mustard;
+$color1: var(--c-blob1);
+$color2: var(--c-blob2);
 
 .blob1-1, .blob1-2 {
     height: 5rem;

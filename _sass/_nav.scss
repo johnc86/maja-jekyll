@@ -5,8 +5,8 @@ nav, .nav {
     a {
         text-decoration: none;
         color: $c-white;
-        padding: 1rem 1rem;
-        margin: auto 0;
+        padding: 1rem 0;
+        margin: auto 1rem;
 
         &:first-of-type {
             margin-left: auto;
@@ -58,4 +58,18 @@ nav, .nav {
             }
         }
     }
+}
+
+#nav__button {
+    animation: typing 4s;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 1.3rem;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    30% {width: 4rem;}
+    70% {width: 4rem;}
+    100% {width: 1.3rem;}
 }
