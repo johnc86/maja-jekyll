@@ -1,11 +1,11 @@
 ---
 layout: post
-is_post: true
-title: Embroidery 3
 date: 2021-07-25T13:58:02.744Z
-image: /assets/uploads/embroidery-3.jpg
+is_post: true
+title: Looking back
+image: /assets/uploads/looking-back_embroidery.jpg
 type: gallery
+series: Textiles (2020 - now)
 categories: Textiles
-series: Water
 ---
-Embroidery
+Embroidery on fabric
