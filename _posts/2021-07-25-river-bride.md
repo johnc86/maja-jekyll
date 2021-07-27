@@ -1,14 +1,12 @@
 ---
 layout: post
+date: 2021-07-25T13:50:18.792Z
 is_post: true
 title: River bride
-date: 2021-07-25T13:50:18.792Z
 image: /assets/uploads/river_bride_maja_lorkowska.jpg
 type: gallery
+series: "'Water' series - collage, 2020"
 categories: Collage
 ---
-River bride
-
-21 x 29.7cm
-
+21 x 29.7cm\
 Collage on paper
