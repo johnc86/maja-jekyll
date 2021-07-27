@@ -5,7 +5,7 @@ is_post: true
 title: "Water lilies "
 image: /assets/uploads/collage-4.jpg
 type: gallery
-series: "'Water' series - collage, 2020"
+series: "'Water' series"
 categories: Collage
 ---
 21 x 29.7cm\
