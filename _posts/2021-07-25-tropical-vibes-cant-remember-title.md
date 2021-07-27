@@ -1,13 +1,12 @@
 ---
 layout: post
-is_post: true
-title: Tropical vibes, can't remember title
 date: 2021-07-25T13:54:30.528Z
+is_post: true
+title: "Water lilies "
 image: /assets/uploads/collage-4.jpg
 type: gallery
+series: "'Water' series - collage, 2020"
 categories: Collage
-series: Water series
 ---
-Untitled lol\
 21 x 29.7cm\
-Collage on acetate
+Collage on paper
