@@ -1,10 +1,11 @@
 ---
 layout: post
-is_post: true
-title: Embroidery 4
 date: 2021-07-25T13:58:30.565Z
+is_post: true
+title: Dried flowers
 image: /assets/uploads/embroidery-4.jpg
 type: gallery
+series: Textiles (2020 - now)
 categories: Textiles
 ---
-Embroidery
+Embroidery on fabric
