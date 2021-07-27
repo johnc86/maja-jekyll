@@ -1,0 +1,10 @@
+---
+layout: post
+title: Still life
+date: 2021-07-27T21:20:32.964Z
+image: /assets/uploads/still-lfie.jpg
+type: gallery
+series: Textiles (2020 - now)
+---
+Yarn on hessian\
+Rug punched wall hanging
