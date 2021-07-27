@@ -20,6 +20,8 @@
 
         @media only screen and (min-width: $pagewidth) {
             margin-left: 2rem;
+            min-width: 70%;
+            max-width: 70%;
         }
 
         p {
