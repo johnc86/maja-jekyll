@@ -5,7 +5,7 @@ is_post: true
 title: Dried flowers
 image: /assets/uploads/embroidery-4.jpg
 type: gallery
-series: Textiles (2020 - now)
+series: Textiles
 categories: Textiles
 ---
 Embroidery on fabric
