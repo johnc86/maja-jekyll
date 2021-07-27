@@ -5,7 +5,7 @@ is_post: true
 title: Late summer in Wales, by the stream
 image: /assets/uploads/tapestry.jpg
 type: gallery
-series: "'Water' series - collage, 2020"
+series: Textiles (2020 - now)
 categories: Textiles
 ---
 Yarn on hessian\
