@@ -1,11 +1,12 @@
 ---
 layout: post
+date: 2021-07-25T13:55:37.336Z
 is_post: true
 title: Waterfall
-date: 2021-07-25T13:55:37.336Z
 image: /assets/uploads/tapestry.jpg
 type: gallery
+series: "'Water' series - collage, 2020"
 categories: Textiles
-series: Water series
 ---
-Yarn on hessian
+Yarn on hessian\
+Rug punched and embroidered wall hanging
