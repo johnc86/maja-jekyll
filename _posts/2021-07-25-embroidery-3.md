@@ -5,7 +5,7 @@ is_post: true
 title: Looking back
 image: /assets/uploads/looking-back_embroidery.jpg
 type: gallery
-series: Textiles (2020 - now)
+series: Textiles
 categories: Textiles
 ---
 Embroidery on fabric
