@@ -5,7 +5,7 @@ is_post: true
 title: Houses
 image: /assets/uploads/embroidery-2.jpg
 type: gallery
-series: Textiles (2020 - now)
+series: Textiles
 categories: Textiles
 ---
 Embroidery on fabric
