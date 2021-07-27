@@ -6,12 +6,6 @@ backend:
 local_backend: true
 media_folder: 'assets/uploads'
 
-# Categories
-permalink: /:year/:month/:day/:title:output_ext  # required for jekyll-category-pages
-# category_path: "jekyll/category" # <- default value
-# category_layout: "category_index.html" # <- default value
-paginate: 2 # <- turn on pagination with two posts per page
-
 collections:
 - name: 'posts'
   label: 'Posts'
@@ -66,31 +60,7 @@ collections:
       widget: 'markdown', 
       required: false 
     }
-- name: 'categories'
-  output: true
-  label: 'Categories'
-  folder: '_categories/'
-  create: true
-  editor:
-    preview: false
-  fields:
-    - { 
-      label: 'Layout', 
-      name: 'layout', 
-      widget: 'hidden', 
-      default: 'default' 
-    }
-    - { 
-      label: 'Category Name', 
-      name: 'category_name', 
-      widget: 'string' 
-    }
-    - { 
-      label: 'Description', 
-      name: 'body', 
-      widget: 'markdown', 
-      required: false 
-    }
+
 - name: 'series'
   output: true
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -118,32 +88,6 @@ collections:
       required: false 
     }
 
-- name: 'pages'
-  label: 'Pages'
-  editor:
-    preview: false
-  files:
-    - label: 'About Page'
-      name: 'about'
-      file: 'about.md'
-      fields:
-        - { 
-          label: 'Title', 
-          name: 'title', 
-          widget: 'hidden', 
-          default: 'about' 
-        }
-        - { 
-          label: 'Layout', 
-          name: 'layout', 
-          widget: 'hidden', 
-          default: 'about' 
-        }
-        - { 
-          label: 'Body', 
-          name: 'body', 
-          widget: 'markdown' 
-        }
 - name: 'config'
   label: 'Config'
   editor:

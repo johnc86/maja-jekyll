@@ -1,3 +1,29 @@
 ---
-layout: fullwidth
+layout: default
 ---
+
+<section class="writing-list__container">
+    {% assign wrt = site.posts | where: 'type', 'writing' %}
+    {% for post in wrt %}
+        <!-- {% assign direction = forloop.index | modulo: 2 %}
+        {% if direction  != 0 %} LEFT {% else %} RIGHT {% endif%} -->
+
+        <div class="writing-list__item linkdiv">
+            <a href="{{post.url}}"></a>
+            <div class="writing-list__title">
+                {{post.title}}
+            </div>
+            <div class="writing-list__text">
+                <div class="writing-list__desc">
+                <img class="writing-list__image" src="{{ post.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
+                
+                {{ post.excerpt }}    
+
+                </div>
+            </div>
+            <div class="writing-list__rm">
+                Read More..
+            </div>
+        </div>
+    {% endfor %}
+</section>

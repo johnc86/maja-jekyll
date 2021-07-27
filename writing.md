@@ -1,7 +1,4 @@
 ---
-layout: default
+layout: writing
 title: Writing
 ---
-# {{ page.title}}
-
-{% include _writing.html %}
