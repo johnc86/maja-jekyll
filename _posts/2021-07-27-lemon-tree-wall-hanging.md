@@ -9,4 +9,4 @@ series: Textiles
 Yarn on hessian \
 Rug punched 
 
-![](/assets/uploads/img_20210517_191058_398.jpg)
+![]()
