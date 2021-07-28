@@ -58,35 +58,3 @@ body {
     0% {background: $c-primary;}
     100% {background: $c-light;}
 }
-
-.btn-dark-toggle {
-    background: transparent;
-    border: 2px solid var(--c-black);
-    color: var(--c-black);
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    margin: auto 0 3rem 1rem;
-    
-    width: 8rem;
-    // position:absolute;
-    // left: 1rem;
-    // bottom: 3rem;
-
-    animation:semi-opacity-fade 5s;
-    animation-iteration-count:1;
-    animation-fill-mode: forwards;
-
-    &:hover {
-        animation:semi-opacity-brighten 2s;
-        animation-iteration-count:1;
-        animation-fill-mode: forwards;
-    }
-}
-
-@keyframes semi-opacity-fade {
-    to {opacity: 20%; border-color: var(--c-light)}
-}
-@keyframes semi-opacity-brighten {
-    to {opacity: 100%;}
-}

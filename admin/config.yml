@@ -38,6 +38,11 @@ collections:
       widget: 'image', 
       required: false,  
       }
+    - { 
+      label: 'Image Alt', 
+      name: 'imagealt', 
+      widget: 'string' 
+    }
     - {
       label: 'Type',
       name: 'type',

@@ -1,6 +1,6 @@
 .post {
     display: flex;
-    margin: 3rem 0 !important;
+    margin: 1rem 0 !important;
     flex-wrap: wrap;
     width: 100%;
 
@@ -14,7 +14,8 @@
         margin-bottom: auto;
         
         @media screen and (min-width: $mobilebreak) {
-            width: 70%;
+            max-height: 75vh;
+            max-width: 70%;
         }
     }
 
