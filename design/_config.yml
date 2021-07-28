@@ -1,0 +1,27 @@
+url: https://www.majalorkowska.com
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      is_post: true # automatically set is_post=true for all posts
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  series:
+    output: true;
