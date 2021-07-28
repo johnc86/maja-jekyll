@@ -2,7 +2,7 @@
 layout: post
 title: " “Making them visible” – Yan Preston On Photographing Liverpool’s
   Chinese Community For LOOK/17"
-date: 2021-07-28T22:01:36.460Z
+date: 2017-04-27T22:01:36.460Z
 image: /assets/uploads/yanpeston.jpg
 imagealt: Woman dressed in black next to an iron statue of a man, on a beach
 type: writing
