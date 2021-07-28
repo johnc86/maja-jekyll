@@ -2,7 +2,7 @@
 layout: post
 title: "“Nervously looking forward”: Liverpool Biennial’s Flashback Episode —
   Reviewed"
-date: 2021-07-28T22:05:07.635Z
+date: 2016-07-19T22:05:00.000Z
 image: /assets/uploads/fact_review2.jpg
 imagealt: Silhouettes of people in arches, in a large dark gallery space
 type: writing
