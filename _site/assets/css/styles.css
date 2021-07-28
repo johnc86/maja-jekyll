@@ -89,13 +89,13 @@ header #nav__button, .header #nav__button { animation: typing 4s; white-space: n
 
 .hero__msgcontainer { width: 90%; height: 90%; max-height: 20rem; max-width: 30rem; margin: auto; padding: 2rem; background: var(--c-white); display: flex; justify-content: center; align-items: center; min-width: 23rem; z-index: 20; margin-top: 3rem; }
 
-.hero__msg { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; max-width: 23rem; line-height: .88; z-index: 30; }
+.hero__msg { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; max-width: 23rem; line-height: .88; z-index: 30; font-family: "Laila", serif; }
 
-.hero__msg h1, .hero__msg h2, .hero__msg h3 { margin: 0; }
+.hero__msg__heading { font-size: 4rem; font-weight: 600; }
 
-.hero__msg h3 { font-size: 2.4rem; }
+.hero__msg__subheading { font-size: 2.4rem; }
 
-@media screen and (max-width: 450px) { .hero { height: 27rem; } .hero__msg h1 { font-size: 2.4rem; } .hero__msg h3 { font-size: 1.4rem; } .hero__msgcontainer { min-width: 70%; width: 70%; height: 70%; } }
+@media screen and (max-width: 450px) { .hero { height: 27rem; } .hero__msg__heading { font-size: 2.4rem; } .hero__msg__subheading { font-size: 1.4rem; } .hero__msgcontainer { min-width: 70%; width: 70%; height: 70%; } }
 
 @keyframes changebg { 0% { background-color: var(--hero-ani-1); }
   25% { background-color: var(--hero-ani-2); }
