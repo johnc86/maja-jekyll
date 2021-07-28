@@ -62,12 +62,16 @@ $aniduration: 20s;
         max-width: 23rem;
         line-height: .88;
         z-index: 30;
+
+        font-family: $f-header;
     
-        h1,h2,h3 {
-            margin: 0;
+        &__heading {
+            font-size: 4rem;
+        font-weight: 600;
+
         }
     
-        h3 {
+        &__subheading {
             font-size: 2.4rem;
         }
     }
