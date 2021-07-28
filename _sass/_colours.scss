@@ -24,14 +24,14 @@ $c-alert: var(--c-alert);
 // Define actual colours as CSS variables:
 body {
     @include col_light;
-}
 
-body.dark-theme {
-    @include col_dark;
+    &.dark-theme {
+        @include col_dark;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
-    .body {
+    body {
         @include col_dark;
 
         &.light-theme {
