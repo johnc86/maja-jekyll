@@ -25,10 +25,10 @@
 <meta property="twitter:image" content="https://www.majalorkowska.com/assets/uploads/birdshirt.jpg" />
 <meta property="twitter:title" content="Birds embroidery on a shirt" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","image":"https://www.majalorkowska.com/assets/uploads/birdshirt.jpg","headline":"Birds embroidery on a shirt","dateModified":"2021-07-27T20:55:05+01:00","datePublished":"2021-07-27T20:55:05+01:00","description":"Embroidery on denim shirt","url":"https://www.majalorkowska.com/2021/07/27/birds.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.majalorkowska.com/2021/07/27/birds.html"},"@context":"https://schema.org"}</script>
+{"datePublished":"2021-07-27T20:55:05+01:00","description":"Embroidery on denim shirt","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.majalorkowska.com/2021/07/27/birds.html"},"url":"https://www.majalorkowska.com/2021/07/27/birds.html","image":"https://www.majalorkowska.com/assets/uploads/birdshirt.jpg","headline":"Birds embroidery on a shirt","dateModified":"2021-07-27T20:55:05+01:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
 </head>
 
 <body>
@@ -94,17 +94,25 @@
 <div class="header__padding"></div>
     <div class="container">
         <div class="post">
-    <img class="post__image" src="/assets/uploads/birdshirt.jpg" alt="" />
-    <div class="post__text">
-        <div class="post__title">
-            <h4>Birds embroidery on a shirt</h4>
+    <!-- <div class="post__image__container"> -->
+        <img class="post__image post__mainimage" id="post__mainimage" src="/assets/uploads/birdshirt.jpg" alt="" />
+    <!-- </div> -->
+    <div class="post__sidebar">
+        <div class="post__moreimages">
+            
         </div>
-        <div class="post__desc">
-            <p>Embroidery on denim shirt</p>
+        <div class="post__text">
+            <div class="post__title">
+                <h4>Birds embroidery on a shirt</h4>
+            </div>
+            <div class="post__desc">
+                <p>Embroidery on denim shirt</p>
 
+            </div>
         </div>
     </div>
 </div>
+
 
     </div>
     <div class="footer__spacer"></div>
@@ -134,10 +142,19 @@
 <script src="https://www.majalorkowska.com/assets/js/nav.js"></script>
 <script src="https://www.majalorkowska.com/assets/js/darkmode.js"></script>
 <script src="https://kit.fontawesome.com/cecee627e9.js" crossorigin="anonymous"></script>
+
+<!-- // make things clickable without wrapping in a -->
 <script>
     $(".linkdiv").click(function() {
         window.location = $(this).find("a").attr("href"); 
         return false;
+    });
+</script>
+
+<!-- make thumbnails be main image -->
+<script>
+    $(".post__thumbnail").click(function() {
+        $("#post__mainimage").attr("src", $(this).attr("src"));
     });
 </script>
 

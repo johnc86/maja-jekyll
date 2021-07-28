@@ -1,14 +1,26 @@
 --- 
 layout: default 
 ---
+
+
 <div class="post">
-    <img class="post__image" src="{{ page.image }}" alt="{{ post.imagealt }}" />
-    <div class="post__text">
-        <div class="post__title">
-            <h4>{{ page.title }}</h4>
+    <!-- <div class="post__image__container"> -->
+        <img class="post__image post__mainimage" id="post__mainimage" src="{{ page.image }}" alt="{{ page.imagealt }}" />
+    <!-- </div> -->
+    <div class="post__sidebar">
+        <div class="post__moreimages">
+            {% for addedimage in page.moreImages%}
+                <img class="post__moreimages__item post__thumbnail" src="{{ addedimage }}" alt="An additional image of {{ page.title }}" />
+            {% endfor %}
         </div>
-        <div class="post__desc">
-            {{ content }}
+        <div class="post__text">
+            <div class="post__title">
+                <h4>{{ page.title }}</h4>
+            </div>
+            <div class="post__desc">
+                {{ content }}
+            </div>
         </div>
     </div>
 </div>
+

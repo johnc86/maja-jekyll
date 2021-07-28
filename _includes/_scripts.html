@@ -3,9 +3,18 @@
 <script src="{{site.url}}/assets/js/nav.js"></script>
 <script src="{{site.url}}/assets/js/darkmode.js"></script>
 <script src="https://kit.fontawesome.com/cecee627e9.js" crossorigin="anonymous"></script>
+
+<!-- // make things clickable without wrapping in a -->
 <script>
     $(".linkdiv").click(function() {
         window.location = $(this).find("a").attr("href"); 
         return false;
+    });
+</script>
+
+<!-- make thumbnails be main image -->
+<script>
+    $(".post__thumbnail").click(function() {
+        $("#post__mainimage").attr("src", $(this).attr("src"));
     });
 </script>

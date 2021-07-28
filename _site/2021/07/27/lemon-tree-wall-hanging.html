@@ -25,10 +25,10 @@
 <meta property="twitter:image" content="https://www.majalorkowska.com/assets/uploads/lemon-tree.jpg" />
 <meta property="twitter:title" content="Lemon tree wall hanging" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","image":"https://www.majalorkowska.com/assets/uploads/lemon-tree.jpg","headline":"Lemon tree wall hanging","dateModified":"2021-07-27T22:40:12+01:00","datePublished":"2021-07-27T22:40:12+01:00","description":"Yarn on hessian Rug punched","url":"https://www.majalorkowska.com/2021/07/27/lemon-tree-wall-hanging.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.majalorkowska.com/2021/07/27/lemon-tree-wall-hanging.html"},"@context":"https://schema.org"}</script>
+{"datePublished":"2021-07-27T22:40:12+01:00","description":"Yarn on hessian Rug punched","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.majalorkowska.com/2021/07/27/lemon-tree-wall-hanging.html"},"url":"https://www.majalorkowska.com/2021/07/27/lemon-tree-wall-hanging.html","image":"https://www.majalorkowska.com/assets/uploads/lemon-tree.jpg","headline":"Lemon tree wall hanging","dateModified":"2021-07-27T22:40:12+01:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
 </head>
 
 <body>
@@ -94,20 +94,32 @@
 <div class="header__padding"></div>
     <div class="container">
         <div class="post">
-    <img class="post__image" src="/assets/uploads/lemon-tree.jpg" alt="" />
-    <div class="post__text">
-        <div class="post__title">
-            <h4>Lemon tree wall hanging</h4>
+    <!-- <div class="post__image__container"> -->
+        <img class="post__image post__mainimage" id="post__mainimage" src="/assets/uploads/lemon-tree.jpg" alt="A wall hanging of lemons, with green and blue leaves. The piece is resting on a bed of grass." />
+    <!-- </div> -->
+    <div class="post__sidebar">
+        <div class="post__moreimages">
+            
+                <img class="post__moreimages__item post__thumbnail" src="/assets/uploads/lemon-tree.jpg" alt="An additional image of Lemon tree wall hanging" />
+            
+                <img class="post__moreimages__item post__thumbnail" src="/assets/uploads/img_20210517_191058_398.jpg" alt="An additional image of Lemon tree wall hanging" />
+            
+                <img class="post__moreimages__item post__thumbnail" src="/assets/uploads/badly_drawn_kitty.jpg" alt="An additional image of Lemon tree wall hanging" />
+            
         </div>
-        <div class="post__desc">
-            <p>Yarn on hessian <br />
+        <div class="post__text">
+            <div class="post__title">
+                <h4>Lemon tree wall hanging</h4>
+            </div>
+            <div class="post__desc">
+                <p>Yarn on hessian <br />
 Rug punched</p>
 
-<p><img src="" alt="" /></p>
-
+            </div>
         </div>
     </div>
 </div>
+
 
     </div>
     <div class="footer__spacer"></div>
@@ -137,10 +149,19 @@ Rug punched</p>
 <script src="https://www.majalorkowska.com/assets/js/nav.js"></script>
 <script src="https://www.majalorkowska.com/assets/js/darkmode.js"></script>
 <script src="https://kit.fontawesome.com/cecee627e9.js" crossorigin="anonymous"></script>
+
+<!-- // make things clickable without wrapping in a -->
 <script>
     $(".linkdiv").click(function() {
         window.location = $(this).find("a").attr("href"); 
         return false;
+    });
+</script>
+
+<!-- make thumbnails be main image -->
+<script>
+    $(".post__thumbnail").click(function() {
+        $("#post__mainimage").attr("src", $(this).attr("src"));
     });
 </script>
 
