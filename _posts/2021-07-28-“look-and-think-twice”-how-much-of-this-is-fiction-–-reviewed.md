@@ -1,7 +1,7 @@
 ---
 layout: post
 title: " “Look and think twice”: How Much Of This Is Fiction. – Reviewed"
-date: 2021-07-28T21:32:09.659Z
+date: 2017-05-27T21:32:09.659Z
 image: /assets/uploads/fact_tortureclassics.jpg
 imagealt: Wall with a large sticker with the words 'torture classics' in black and red
 type: writing
