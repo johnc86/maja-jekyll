@@ -2,7 +2,7 @@
 layout: post
 title: " “Are women drawn to thread or are they pushed towards it?” Anni Albers
   – Reviewed"
-date: 2021-07-28T21:44:34.784Z
+date: 2018-11-29T22:44:34.784Z
 image: /assets/uploads/annialbers.jpg
 imagealt: Weavings hanging from the ceiling with people standing in between them
 type: writing
