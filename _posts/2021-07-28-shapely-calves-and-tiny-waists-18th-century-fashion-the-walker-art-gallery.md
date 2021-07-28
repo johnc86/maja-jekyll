@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shapely calves and tiny waists: 18th century fashion @ the Walker Art Gallery"
-date: 2021-07-28T21:22:21.032Z
+date: 2018-09-05T21:22:21.032Z
 image: /assets/uploads/dressedtoimpress.webp
 imagealt: 18th century dress on a mannequin
 type: writing
