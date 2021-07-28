@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Long Read: Convenience Gallery"
-date: 2021-07-28T20:55:17.256Z
+date: 2020-05-19T20:55:17.256Z
 image: /assets/uploads/conveniencegallery.webp
 imagealt: "Interior of Convenience Gallery space, a big open room with high
   ceilings, tables, fairy lights and people sat at the tables having a chat. "
