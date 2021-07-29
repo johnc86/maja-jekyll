@@ -72,6 +72,10 @@ body {
         line-height: 1.75rem;
         position: relative;
         margin: auto;
+        @media only screen and (max-width: $pagewidth) {
+            margin: 0;
+        }
+
     }
 
     &__portfolio {
@@ -123,7 +127,7 @@ body {
         top: 0;
         left: 5.5rem;
         z-index: -1;
-        width: 20rem;
+        width: 13rem;
 
         ul {
             padding: 0;

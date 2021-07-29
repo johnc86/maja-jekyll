@@ -116,6 +116,8 @@ footer__sitename, .footer__sitename { margin: auto 1rem auto auto; }
 
 footer__social, .footer__social { display: flex; margin: auto; padding: 0.5rem; }
 
+@media only screen and (max-width: 940px) { footer__social, .footer__social { flex-wrap: wrap; justify-content: center; } }
+
 footer__social a, .footer__social a { display: inline-flex; text-decoration: none; margin: 0 2rem; }
 
 footer__social--icon, .footer__social--icon { font-size: 1.3rem; color: var(--c-white); }
@@ -331,6 +333,8 @@ body { display: flex; flex-direction: column; background: var(--c-sitebg); }
 
 .home__headline { font-family: "Thasadith", sans-serif; font-weight: 700; font-size: 2rem; color: var(--c-primary); line-height: 1.75rem; position: relative; margin: auto; }
 
+@media only screen and (max-width: 940px) { .home__headline { margin: 0; } }
+
 .home__portfolio { display: flex; font-family: "Thasadith", sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--hero-ani-3); flex-wrap: wrap; margin-top: 1rem; }
 
 @media only screen and (min-width: 940px) { .home__portfolio { font-size: 3rem; flex-wrap: nowrap; } }
@@ -343,7 +347,7 @@ body { display: flex; flex-direction: column; background: var(--c-sitebg); }
 
 .home__portfolio__container { margin: 5rem 0 3rem 0; }
 
-.wordCarousel div { overflow: hidden; position: absolute; height: 2.2rem; top: 0; left: 5.5rem; z-index: -1; width: 20rem; }
+.wordCarousel div { overflow: hidden; position: absolute; height: 2.2rem; top: 0; left: 5.5rem; z-index: -1; width: 13rem; }
 
 .wordCarousel div ul { padding: 0; }
 
