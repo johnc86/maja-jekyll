@@ -343,7 +343,7 @@ body { display: flex; flex-direction: column; background: var(--c-sitebg); }
 
 .home__portfolio__container { margin: 5rem 0 3rem 0; }
 
-.wordCarousel div { overflow: hidden; position: absolute; height: 2.2rem; top: 0; left: 5.5rem; z-index: -1; }
+.wordCarousel div { overflow: hidden; position: absolute; height: 2.2rem; top: 0; left: 5.5rem; z-index: -1; width: 20rem; }
 
 .wordCarousel div ul { padding: 0; }
 
