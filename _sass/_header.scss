@@ -10,6 +10,10 @@ header, .header {
     text-decoration: none;
     color: $c-white;
     z-index: 1;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     // &__padding { USED FOR STICKY HEADER BUT BREAKS HOMEPAGE
     //     margin-bottom: 5rem;
@@ -31,6 +35,21 @@ header, .header {
 
     @import 'blob';
     @import 'nav';
+
+    &__padding {
+        padding-bottom: 5rem;
+    }
+
+    &__corner {
+        position: absolute;
+        background: $c-primary;
+        top: -4em;
+        left: -5rem;
+        height: 10rem;
+        width: 20rem;
+        z-index: -30;
+        transform: rotate(-10deg);
+    }
 }
 
  /* When the menu is open */

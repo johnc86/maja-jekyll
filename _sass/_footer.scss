@@ -8,9 +8,9 @@ footer, .footer {
     font-family: $f-header;
     font-size: 1rem;
 
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    // position: fixed;
+    // bottom: 0;
+    // width: 100%;
 
     &__spacer {
         margin-top:1rem;
@@ -58,7 +58,7 @@ footer, .footer {
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    margin: auto 0 3rem 1rem;
+    margin: auto 0 1rem 1rem;
     
     width: 8rem;
     // position:absolute;
