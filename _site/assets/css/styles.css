@@ -194,7 +194,7 @@ footer__social--textsvg, .footer__social--textsvg { fill: var(--c-white); }
 
 .series { margin: 2rem 2rem 0 2rem; }
 
-.series__title { font-size: 2rem; font-family: "Laila", serif; font-weight: 600; }
+.series__title { font-size: 2rem; font-family: "Laila", serif; font-weight: 600; color: var(--c-black); }
 
 @media screen and (min-width: 940px) { .series__title { font-size: 3rem; } }
 

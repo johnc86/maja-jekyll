@@ -16,9 +16,10 @@ layout: default
         {% assign linktype = "_self" %}
     {% endif %}
 
-        <div class="writing-list__item linkdiv">
-
-            <a href="{{ postlink }}" target="{{ linktype }}"></a>
+        <div class="writing-list__item {% if post.link %}linkdiv{% endif %}">
+            {% if post.link %}
+                <a href="{{ postlink }}" target="{{ linktype }}"></a>
+            {% endif %}
 
             <img class="writing-list__image" src="{{ post.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
             <div class="writing-list__text">
@@ -38,9 +39,12 @@ layout: default
                 <div class="writing-list__desc line-clamp">
                     {{ post.excerpt }}    
                 </div>
-                <div class="writing-list__rm shrink-border">
-                    {{ postlink_text }}
-                </div>
+                {% if post.link %}
+                    <div class="writing-list__rm shrink-border">
+                        {{ postlink_text }}
+                    </div>
+                {% endif %}
+
             </div>
         </div>
 

@@ -5,6 +5,7 @@
         font-size: 2rem;
         font-family: $f-header;
         font-weight: 600;
+        color: $c-black;
 
         @media screen and (min-width: $mobilebreak) {
             font-size: 3rem;
