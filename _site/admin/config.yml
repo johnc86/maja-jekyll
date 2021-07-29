@@ -27,6 +27,11 @@ collections:
       widget: 'string' 
     }
     - { 
+      label: 'Meta', 
+      name: 'meta', 
+      widget: 'string' 
+    }
+    - { 
       label: 
       'Publish Date', 
       name: 'date', 

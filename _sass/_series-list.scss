@@ -17,6 +17,7 @@
 
     &__text {
         margin: auto;
+        font-size: 1.2rem;
 
         @media only screen and (min-width: $pagewidth) {
             margin: auto 0 auto 2rem;

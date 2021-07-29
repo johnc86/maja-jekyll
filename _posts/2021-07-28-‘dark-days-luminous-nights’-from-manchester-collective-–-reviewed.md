@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ‘Dark Days Luminous Nights’ from Manchester Collective – reviewed
+meta: Published Online - The State of the Arts
 date: 2021-06-09T20:33:59.481Z
 image: /assets/uploads/7.-dark-days-luminous-nights-at-the-white-hotel-salford.-photo-by-drew-forsyth-©-manchester-collective-1536x1025.jpg.webp
 imagealt: Large face of a man in orange light projected onto a screen and a

@@ -25,10 +25,20 @@ layout: default
                 <div class="writing-list__title">
                     {{post.title}}
                 </div>
-                <div class="writing-list__desc">
+                <div class="writing-list__info">
+                    {% if post.meta %}
+                        <div class="writing-list__meta">
+                            {{ post.meta }}
+                        </div>
+                    {% endif %}
+                    <div class="writing-list__date">
+                        {{ post.date | date: "%-d %B %Y" }}
+                    </div>
+                </div>
+                <div class="writing-list__desc line-clamp">
                     {{ post.excerpt }}    
                 </div>
-                <div class="writing-list__rm">
+                <div class="writing-list__rm shrink-border">
                     {{ postlink_text }}
                 </div>
             </div>
