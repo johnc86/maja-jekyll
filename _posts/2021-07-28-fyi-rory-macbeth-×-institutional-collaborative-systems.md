@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "FYI: Rory Macbeth × Institutional Collaborative Systems "
-date: 2021-03-24T22:48:03.896Z
+meta: for Corridor8
+date: 2016-03-24T22:48:03.896Z
 image: /assets/uploads/corridor8.jpg
 imagealt: Gallery space in a purple light and people talking
 type: writing
