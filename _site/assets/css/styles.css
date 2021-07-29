@@ -214,9 +214,9 @@ footer__social--textsvg, .footer__social--textsvg { fill: var(--c-white); }
 
 .writing-list__title { font-size: 1.5rem; font-family: "Laila", serif; color: var(--c-black); }
 
-.writing-list__info { display: flex; }
+.writing-list__info { display: flex; margin-bottom: 0.7rem; }
 
-.writing-list__meta { font-family: "Thasadith", sans-serif; color: var(--c-light); margin-bottom: 0.7rem; margin-right: 2rem; }
+.writing-list__meta { font-family: "Thasadith", sans-serif; color: var(--c-light); margin-right: 2rem; }
 
 .writing-list__date { font-family: "Thasadith", sans-serif; font-size: 1rem; color: var(--c-light); text-align: right; margin-left: auto; min-width: 10rem; }
 

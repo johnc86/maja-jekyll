@@ -29,7 +29,8 @@ collections:
     - { 
       label: 'Meta', 
       name: 'meta', 
-      widget: 'string' 
+      widget: 'string',
+      required: false 
     }
     - { 
       label: 

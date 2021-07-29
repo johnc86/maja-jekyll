@@ -35,13 +35,14 @@
 
     &__info {
         display: flex;
+        margin-bottom: 0.7rem;
         // justify-content: space-between;
     }
 
     &__meta {
         font-family: $f-accent;
         color: $c-light;
-        margin-bottom: 0.7rem;
+        
         margin-right: 2rem;
     }
 
