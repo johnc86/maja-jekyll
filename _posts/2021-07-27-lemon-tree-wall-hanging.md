@@ -10,7 +10,6 @@ series: Textiles
 moreImages:
   - /assets/uploads/lemon-tree.jpg
   - /assets/uploads/img_20210517_191058_398.jpg
-  - /assets/uploads/badly_drawn_kitty.jpg
 ---
 Yarn on hessian \
 Rug punched

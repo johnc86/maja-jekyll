@@ -25,7 +25,7 @@
 <meta property="twitter:image" content="https://www.majalorkowska.com/assets/uploads/tapestry.jpg" />
 <meta property="twitter:title" content="Late summer in Wales, by the stream" />
 <script type="application/ld+json">
-{"datePublished":"2021-07-25T14:55:37+01:00","description":"Yarn on hessian Rug punched and embroidered wall hanging 55 x 47cm","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.majalorkowska.com/textiles/2021/07/25/waterfall.html"},"url":"https://www.majalorkowska.com/textiles/2021/07/25/waterfall.html","image":"https://www.majalorkowska.com/assets/uploads/tapestry.jpg","headline":"Late summer in Wales, by the stream","dateModified":"2021-07-25T14:55:37+01:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","image":"https://www.majalorkowska.com/assets/uploads/tapestry.jpg","headline":"Late summer in Wales, by the stream","dateModified":"2021-07-25T14:55:37+01:00","datePublished":"2021-07-25T14:55:37+01:00","description":"Yarn on hessian Rug punched and embroidered wall hanging 55 x 47cm","url":"https://www.majalorkowska.com/textiles/2021/07/25/waterfall.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.majalorkowska.com/textiles/2021/07/25/waterfall.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
@@ -93,32 +93,31 @@
 </header>
 <div class="header__padding"></div>
     <div class="container">
-        <div class="post">
-    <!-- <div class="post__image__container"> -->
+        
+    <div class="post">
         <img class="post__image post__mainimage" id="post__mainimage" src="/assets/uploads/tapestry.jpg" alt="" />
-    <!-- </div> -->
-    <div class="post__sidebar">
-        <div class="post__moreimages">
-            
-        </div>
-        <div class="post__text">
-            <div class="post__title">
-                <h4>Late summer in Wales, by the stream</h4>
+        <div class="post__sidebar">
+            <div class="post__moreimages">
+                
             </div>
-            <div class="post__desc">
-                <p>Yarn on hessian<br />
+            <div class="post__text">
+                <div class="post__title">
+                    <h4>Late summer in Wales, by the stream</h4>
+                </div>
+                <div class="post__desc">
+                    <p>Yarn on hessian<br />
 Rug punched and embroidered wall hanging<br />
 55 x 47cm</p>
 
+                </div>
             </div>
         </div>
     </div>
-</div>
+
 
 
     </div>
-    <div class="footer__spacer"></div>
-<button class="btn-dark-toggle">dark / light</button>
+    <button class="btn-dark-toggle">dark / light</button>
 <footer class=" primaryfade ">
     <div class="footer__social">
         <a href="https://www.instagram.com/majalorko/">
@@ -148,7 +147,8 @@ Rug punched and embroidered wall hanging<br />
 <!-- // make things clickable without wrapping in a -->
 <script>
     $(".linkdiv").click(function() {
-        window.location = $(this).find("a").attr("href"); 
+        var a = $(this).find("a");
+        window.open(a.attr("href"), a.attr("target") );
         return false;
     });
 </script>

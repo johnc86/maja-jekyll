@@ -6,8 +6,10 @@ layout: default
 
 <div class="container">
     <div class="series">
-        <div class="series__title"><h2>{{ page.series_name }}</h2></div>
-        <div class="series__desc">{{ content }}</div>
+        <div class="series__title">{{ page.series_name }}</div>
+        {%if post.excerpt%}
+            <div class="series__desc">{{ post.excerpt }}</div>
+        {% endif %}
     </div>
     
     <section class="gallery__container">
@@ -17,7 +19,7 @@ layout: default
                 <div class="gallery__item__title">
                     {{ post.title }}
                 </div>
-                <a href="{{ post.url }}"></a>
+                <a href="{{ post.url }}" target="_self"></a>
             </div>
         {% endfor %}
     </section>

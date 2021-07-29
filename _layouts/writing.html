@@ -2,28 +2,37 @@
 layout: default
 ---
 
-<section class="writing-list__container">
+<section class="writing-list">
     {% assign wrt = site.posts | where: 'type', 'writing' %}
     {% for post in wrt %}
-        <!-- {% assign direction = forloop.index | modulo: 2 %}
-        {% if direction  != 0 %} LEFT {% else %} RIGHT {% endif%} -->
+
+    {% if post.link %}
+        {% assign postlink = post.link%}
+        {% assign postlink_text = "Open Link" %}
+        {% assign linktype = "_blank" %}
+    {% else %}
+        {% assign postlink = post.url%}
+        {% assign postlink_text = "Read More" %}
+        {% assign linktype = "_self" %}
+    {% endif %}
 
         <div class="writing-list__item linkdiv">
-            <a href="{{post.url}}"></a>
-            <div class="writing-list__title">
-                {{post.title}}
-            </div>
-            <div class="writing-list__text">
-                <div class="writing-list__desc">
-                <img class="writing-list__image" src="{{ post.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
-                
-                {{ post.excerpt }}    
 
+            <a href="{{ postlink }}" target="{{ linktype }}"></a>
+
+            <img class="writing-list__image" src="{{ post.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
+            <div class="writing-list__text">
+                <div class="writing-list__title">
+                    {{post.title}}
+                </div>
+                <div class="writing-list__desc">
+                    {{ post.excerpt }}    
+                </div>
+                <div class="writing-list__rm">
+                    {{ postlink_text }}
                 </div>
             </div>
-            <div class="writing-list__rm">
-                Read More..
-            </div>
         </div>
+
     {% endfor %}
 </section>

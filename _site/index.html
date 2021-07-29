@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Maja Lorkowska" />
 <script type="application/ld+json">
-{"url":"https://www.majalorkowska.com/","headline":"Maja Lorkowska","@type":"WebSite","@context":"https://schema.org"}</script>
+{"@type":"WebSite","headline":"Maja Lorkowska","url":"https://www.majalorkowska.com/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
@@ -100,8 +100,7 @@
     <div class="hero hero__ani hero__diag"></div>
 </div>
 
-    <div class="footer__spacer"></div>
-<button class="btn-dark-toggle">dark / light</button>
+    <button class="btn-dark-toggle">dark / light</button>
 <footer class="">
     <div class="footer__social">
         <a href="https://www.instagram.com/majalorko/">
@@ -131,7 +130,8 @@
 <!-- // make things clickable without wrapping in a -->
 <script>
     $(".linkdiv").click(function() {
-        window.location = $(this).find("a").attr("href"); 
+        var a = $(this).find("a");
+        window.open(a.attr("href"), a.attr("target") );
         return false;
     });
 </script>

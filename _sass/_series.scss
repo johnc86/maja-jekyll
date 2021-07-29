@@ -1,7 +1,14 @@
 .series {
-    margin: 2rem;
+    margin: 2rem 2rem 0 2rem;
+
     &__title {
-        // font-size: 3rem;
+        font-size: 2rem;
+        font-family: $f-header;
+        font-weight: 600;
+
+        @media screen and (min-width: $mobilebreak) {
+            font-size: 3rem;
+        }
     }
 
     &__desc {

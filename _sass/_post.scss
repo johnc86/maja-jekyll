@@ -1,6 +1,6 @@
 .post {
     display: flex;
-    margin: 1rem 0 !important;
+    margin: 1rem 0;
     flex-wrap: wrap;
     width: 100%;
 
@@ -11,31 +11,27 @@
     &__image {
         width: 100%;
         object-fit: contain;
-        object-position: right;
         margin-bottom: auto;
-        
-        @media screen and (min-width: $mobilebreak) {
-            // max-height: 100%;
-            // max-width: 100%;
-            max-height: 70vh;
-            max-width: 70%;
-        }
+        max-height: 70vh;
 
-        &__container {
-            @media screen and (min-width: $mobilebreak) {
-                // max-height: 70vh;
-                // max-width: 70%;
-            }
+                
+        @media screen and (min-width: $mobilebreak) {
+            max-width: 70%;
+            object-position: right;
         }
     }
 
     &__sidebar {
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: $mobilebreak) {
+            width: 100%;
+        }
     }
 
     &__moreimages {
         display:flex;
+        justify-content: center;
         
         @media screen and (min-width: $mobilebreak) {
             flex-direction:column;
@@ -48,7 +44,6 @@
             margin: 0.25rem 0.25rem 0 0;
 
             @media screen and (min-width: $mobilebreak) {
-                
                 margin: 0 0 0.25rem 0.25rem;
             }
             
@@ -58,7 +53,7 @@
     &__text {
         display: flex;
         flex-direction: column;
-        margin: 1rem 1rem 0 1rem;
+        margin: 1rem 2rem 0 auto;
         flex-shrink: 3;
 
         @media screen and (min-width: $mobilebreak) {
@@ -68,5 +63,138 @@
         p {
             margin: 0;
         }
+
+        p + p {
+            margin: 1rem 0;
+        }
     }
+
+    &writing {
+        display: flex;
+        flex-direction: column;
+
+        margin: 1rem 0;
+
+        @media screen and (min-width: $mobilebreak) {
+            flex-direction: row;
+        }
+    
+        &__image {
+            width: 100%;
+            object-fit: contain;
+            max-height: 30vh;
+        }
+    
+        &__sidebar {
+            @extend .post__sidebar;
+            @media screen and (min-width: $mobilebreak) {
+                width: 40%
+            }
+        }
+    
+        &__moreimages {
+            @extend .post__moreimages;
+            @media screen and (min-width: $mobilebreak) {
+                flex-direction:row;
+            }
+    
+            &__item {
+                @extend .post__moreimages__item;
+                margin: 0.25rem;
+            }
+        }
+    
+        &__text {
+            @extend .post__text;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+
+            @media screen and (min-width: $mobilebreak) {
+                font-size: 2rem;
+            }
+        }
+
+        &__desc {
+            @media screen and (min-width: $mobilebreak) {
+                font-size: 1.2rem;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            blockquote p {
+                color: $c-light;
+                font-family: $f-header;
+                position: relative;
+
+                margin: 1rem 0;
+                font-size: 1.2rem;
+                font-weight: 400;
+                line-height: 1.3rem;
+
+                @media screen and (min-width: $mobilebreak) {
+                    margin: 3rem 7rem 3rem -14rem;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    line-height: 2rem;
+                }
+
+                &::before {
+                    display: block;
+                    content: ' ';
+                    background-image: url('/assets/quote.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    opacity: 20%;
+
+                    height: 2rem;
+                    width: 2rem;
+
+                    position: absolute;
+                    top: 0;
+                    left: -2.5rem;
+                    
+
+                    @media screen and (min-width: $mobilebreak) {
+                        top: -1rem;
+                        left: -5rem;
+                        height: 3rem;
+                        width: 3rem;
+                    }
+                }
+
+                &::after {
+                    display: block;
+                    content: ' ';
+                    background-image: url('/assets/quote2.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    opacity: 20%;
+
+                    height: 2rem;
+                    width: 2rem;
+
+                    position: absolute;
+                    bottom: 0;
+                    right: -2.5rem;
+                    
+
+                    @media screen and (min-width: $mobilebreak) {
+                        bottom: -1rem;
+                        right: -5rem;
+                        height: 3rem;
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.quotesvg {
+    fill: blue;
 }

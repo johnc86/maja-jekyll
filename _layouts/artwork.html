@@ -6,14 +6,14 @@ layout: default
     {% for ser in site.series %}
     {% assign ser-post = site.posts | where: 'series', ser.series_name | first %}
         <div class="series-list__item linkdiv">
-            <a href="{{ser.url}}"></a>
+            <a href="{{ser.url}}" target="_self"></a>
             <img class="series-list__image" src="{{ ser-post.image }}" alt="{{ post.title | default: 'image representing a theme in this article' }}" />
             <div class="series-list__text">
                 <div class="series-list__title">
                     <h2>{{ser.series_name}}</h2>
                 </div>
                 <div class="series-list__desc">
-                    {{ ser.content }}    
+                    {{ ser.excerpt }}    
                 </div>
             </div>
         </div>

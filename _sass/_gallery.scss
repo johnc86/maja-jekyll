@@ -69,6 +69,7 @@ $title-opacity-time: 0.5s;
         &__image {
             width: 100%;
             object-fit: cover;
+            max-height: 70vh;
 
             @media screen and (min-width: $mobilebreak) {
                 max-width: 15rem;

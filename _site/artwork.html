@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Artwork" />
 <script type="application/ld+json">
-{"url":"https://www.majalorkowska.com/artwork.html","headline":"Artwork","@type":"WebPage","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Artwork","url":"https://www.majalorkowska.com/artwork.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
@@ -93,8 +93,8 @@
     
     
         <div class="series-list__item linkdiv">
-            <a href="/series/2021-07-25-collage.html"></a>
-            <img class="series-list__image" src="/assets/uploads/finlandia.jpg" alt="image representing a theme in this article" />
+            <a href="/series/2021-07-25-collage.html" target="_self"></a>
+            <img class="series-list__image" src="/assets/uploads/collage-5.jpg" alt="image representing a theme in this article" />
             <div class="series-list__text">
                 <div class="series-list__title">
                     <h2>Collages </h2>
@@ -108,14 +108,16 @@
     
     
         <div class="series-list__item linkdiv">
-            <a href="/series/2021-07-25-water.html"></a>
+            <a href="/series/2021-07-25-water.html" target="_self"></a>
             <img class="series-list__image" src="/assets/uploads/dream_maja-lorkowska.jpg" alt="image representing a theme in this article" />
             <div class="series-list__text">
                 <div class="series-list__title">
                     <h2>'Water' series</h2>
                 </div>
                 <div class="series-list__desc">
-                    <p>This is the water series, this is the description about the water series. This is a fairly long but not insane piece of text about the series. This is the water series, this is the description about the water series. This is a fairly long but not insane piece of text about the series. This is the water series, this is the description about the water series. This is a fairly long but not insane piece of text about the series.</p>
+                    <p><strong>Water</strong> can be freedom, ease, calm.<br />
+Floating, weightlessness, serenity.<br />
+Murky peril, the deep unknown, waves crashing against slimy rocks.</p>
     
                 </div>
             </div>
@@ -123,7 +125,7 @@
     
     
         <div class="series-list__item linkdiv">
-            <a href="/series/2021-07-27-map-layout-series-series_name-textiles-2020-now-body-textile-works-including-embroidery-rug-and-a-mix-of-the-two.html"></a>
+            <a href="/series/2021-07-27-map-layout-series-series_name-textiles-2020-now-body-textile-works-including-embroidery-rug-and-a-mix-of-the-two.html" target="_self"></a>
             <img class="series-list__image" src="/assets/uploads/little_white_house.jpg" alt="image representing a theme in this article" />
             <div class="series-list__text">
                 <div class="series-list__title">
@@ -138,8 +140,7 @@
     
 </section>
     </div>
-    <div class="footer__spacer"></div>
-<button class="btn-dark-toggle">dark / light</button>
+    <button class="btn-dark-toggle">dark / light</button>
 <footer class="">
     <div class="footer__social">
         <a href="https://www.instagram.com/majalorko/">
@@ -169,7 +170,8 @@
 <!-- // make things clickable without wrapping in a -->
 <script>
     $(".linkdiv").click(function() {
-        window.location = $(this).find("a").attr("href"); 
+        var a = $(this).find("a");
+        window.open(a.attr("href"), a.attr("target") );
         return false;
     });
 </script>

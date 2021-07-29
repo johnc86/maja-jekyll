@@ -19,13 +19,17 @@
         margin: auto;
 
         @media only screen and (min-width: $pagewidth) {
-            margin-left: 2rem;
-            min-width: 70%;
-            max-width: 70%;
+            margin: auto 0 auto 2rem;
+            // min-width: 70%;
+            width: 70%;
         }
 
         p {
             margin: 0;
+        }
+
+        p + p {
+            margin: 1rem 0;
         }
     }
 
@@ -36,14 +40,16 @@
 
     &__image {
         max-height: 20rem;
+        max-width: 30%;
         object-fit: contain;
         min-width: 20rem;
         margin: auto;
 
         @media only screen and (max-width: $pagewidth) {
             min-width: 10rem;
+            max-width: 100%;
             width: 100%;
-            margin: 2rem;
+            margin: 2rem auto;
         }
     }
 }

@@ -25,7 +25,7 @@
 <meta property="twitter:image" content="https://www.majalorkowska.com/assets/uploads/waves.jpg" />
 <meta property="twitter:title" content="Waves" />
 <script type="application/ld+json">
-{"datePublished":"2021-07-27T21:38:24+01:00","description":"21 x 29.7cm Painted paper, acetate and found image on paper","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.majalorkowska.com/2021/07/27/waves.html"},"url":"https://www.majalorkowska.com/2021/07/27/waves.html","image":"https://www.majalorkowska.com/assets/uploads/waves.jpg","headline":"Waves","dateModified":"2021-07-27T21:38:24+01:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","image":"https://www.majalorkowska.com/assets/uploads/waves.jpg","headline":"Waves","dateModified":"2021-07-27T21:38:24+01:00","datePublished":"2021-07-27T21:38:24+01:00","description":"21 x 29.7cm Painted paper, acetate and found image on paper","url":"https://www.majalorkowska.com/2021/07/27/waves.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.majalorkowska.com/2021/07/27/waves.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
@@ -93,31 +93,30 @@
 </header>
 <div class="header__padding"></div>
     <div class="container">
-        <div class="post">
-    <!-- <div class="post__image__container"> -->
+        
+    <div class="post">
         <img class="post__image post__mainimage" id="post__mainimage" src="/assets/uploads/waves.jpg" alt="" />
-    <!-- </div> -->
-    <div class="post__sidebar">
-        <div class="post__moreimages">
-            
-        </div>
-        <div class="post__text">
-            <div class="post__title">
-                <h4>Waves</h4>
+        <div class="post__sidebar">
+            <div class="post__moreimages">
+                
             </div>
-            <div class="post__desc">
-                <p>21 x 29.7cm<br />
+            <div class="post__text">
+                <div class="post__title">
+                    <h4>Waves</h4>
+                </div>
+                <div class="post__desc">
+                    <p>21 x 29.7cm<br />
 Painted paper, acetate and found image on paper</p>
 
+                </div>
             </div>
         </div>
     </div>
-</div>
+
 
 
     </div>
-    <div class="footer__spacer"></div>
-<button class="btn-dark-toggle">dark / light</button>
+    <button class="btn-dark-toggle">dark / light</button>
 <footer class=" primaryfade ">
     <div class="footer__social">
         <a href="https://www.instagram.com/majalorko/">
@@ -147,7 +146,8 @@ Painted paper, acetate and found image on paper</p>
 <!-- // make things clickable without wrapping in a -->
 <script>
     $(".linkdiv").click(function() {
-        window.location = $(this).find("a").attr("href"); 
+        var a = $(this).find("a");
+        window.open(a.attr("href"), a.attr("target") );
         return false;
     });
 </script>
