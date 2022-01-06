@@ -8,7 +8,6 @@ imagealt: A wall hanging of lemons, with green and blue leaves. The piece is
 type: gallery
 series: Textiles
 moreImages:
-  - /assets/uploads/lemon-tree.jpg
   - /assets/uploads/img_20210517_191058_398.jpg
   - /assets/uploads/img_20210517_191058_267.jpg
 ---
