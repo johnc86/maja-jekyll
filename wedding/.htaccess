@@ -1,0 +1,3 @@
+RewriteEngine on
+Redirect 301 / https://johnc86.github.io/wedding/
+Redirect 301 /index.html https://johnc86.github.io/wedding/index.html
