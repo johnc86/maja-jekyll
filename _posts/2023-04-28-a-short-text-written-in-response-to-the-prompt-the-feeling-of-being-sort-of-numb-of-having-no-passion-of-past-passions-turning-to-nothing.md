@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A short text written in response to the prompt "The feeling of being sort
-  of numb; of having no passion; of past passions turning to nothing"
+title: '"The feeling of being sort of numb; of having no passion; of past
+  passions turning to nothing"'
 date: 2020-05-19T18:45:31.052Z
 image: /assets/uploads/screenshot-2023-04-28-194932.png
 imagealt: Phlegm Project logo
