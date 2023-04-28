@@ -6,7 +6,7 @@ date: 2020-05-19T18:45:31.052Z
 image: /assets/uploads/screenshot-2023-04-28-194932.png
 imagealt: Phlegm Project logo
 type: writing
-link: https://www.instagram.com/p/CS8yiowsfE5/
+link: https://openeye.org.uk/blog/open-3-affecting-change-interview-yetunde-adebiyi-adam-mazen-theo-temple/
 ---
 I am careful with what I allow my mind to consume. Happening upon anything that could violently push me out of my everyday numbness has to be treated with caution. I once picked up ‘The Bell Jar’ in Waterstones and having read the back cover, I spent ten minutes focusing on the sensation of my tongue touching the roof of my mouth to keep the wave of anxiety at a manageable distance.
 
