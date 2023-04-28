@@ -7,11 +7,7 @@ image: /assets/uploads/screenshot-2023-04-28-194932.png
 imagealt: Phlegm Project logo
 type: writing
 ---
-<!--StartFragment-->
-
 I am careful with what I allow my mind to consume. Happening upon anything that could violently push me out of my everyday numbness has to be treated with caution. I once picked up ‘The Bell Jar’ in Waterstones and having read the back cover, I spent ten minutes focusing on the sensation of my tongue touching the roof of my mouth to keep the wave of anxiety at a manageable distance.
-
-<!--EndFragment-->
 
 Descriptions of TV shows have to be examined carefully before I press play, keywords in film blurbs and book synopses too. Sometimes it jumps out of a song lyric, unexpectedly, like cutting your finger when chopping an onion.
 
