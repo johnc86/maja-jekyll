@@ -3,7 +3,8 @@ layout: post
 title: A short text written in response to the prompt "The feeling of being sort
   of numb; of having no passion; of past passions turning to nothing"
 date: 2020-05-19T18:45:31.052Z
-imagealt: no image
+image: /assets/uploads/screenshot-2023-04-28-194932.png
+imagealt: Phlegm Project logo
 type: writing
 ---
 <!--StartFragment-->
@@ -19,3 +20,5 @@ If something gives me the feeling of nauseating, excited apprehension, I want to
 It is exhausting to anticipate these emotional punches all the time. Things that remind me of my younger self, when friends held hands, not babies. Past passions that now rest like the dust on the computer screen in my day job. Yet, if that comfortable twenty-something numbness, flatness, routine-ness is to be maintained, I have to stay careful. Some days, I will purposefully choose something that will inevitably throw me down a spiral of misguided daydreams, like a walking textbook embodiment of ‘sad girl theory’, only without a Tumblr account. I feel a pinch of excitement that whatever I’m about to do will make me feel so much, *too much.*
 
 Recently, I watched ‘Normal People’ and couldn’t eat for three days. I knew this would happen.
+
+*This short text was written in response to the prompt "The feeling of being sort of numb; of having no passion; of past passions turning to nothing". It was completed as part of the Project Phlegm art course during the COVID-19 pandemic.*
