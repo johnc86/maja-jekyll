@@ -6,4 +6,6 @@ image: /assets/uploads/img_20220617_132920_168.jpg
 imagealt: Bon Bon brooch
 type: gallery
 series: Textiles
+moreImages:
+  - /assets/uploads/img_20220617_132920_415.jpg
 ---
